@@ -1,0 +1,121 @@
+CRITICAL - 2022-04-20 02:59:30 --> syntax error, unexpected ';', expecting ')'
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-20 03:00:24 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Controllers/Identity.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step2()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-20 03:06:42 --> file_get_contents(/srv/webbmd/public/Backups/remote_user.exists): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Identity.php(394): file_get_contents()
+#2 /srv/webbmd/app/Controllers/Identity.php(59): App\Controllers\Identity->manage_remote_user()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-20 03:13:52 --> unlink(/srv/webbmd/public/Backups/linBMD2.sql): Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/backup_helper.php(13): unlink()
+#2 /srv/webbmd/app/Controllers/Home.php(52): App\Controllers\database_backup()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Home->signout()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-20 06:23:11 --> unlink(/srv/webbmd/public/Backups/linBMD2.sql): Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/backup_helper.php(13): unlink()
+#2 /srv/webbmd/app/Controllers/Home.php(52): App\Controllers\database_backup()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Home->signout()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-20 09:33:17 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+#0 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->send_email()
+#1 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-20 09:35:00 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+#0 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->send_email()
+#1 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-20 09:35:22 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+#0 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->send_email()
+#1 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-20 10:17:12 --> require(.../ThirdParty/PHPMailer/src/Exception.php): failed to open stream: No such file or directory
+#0 /srv/webbmd/app/Controllers/Transcribe.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(18): require()
+#2 /srv/webbmd/system/Autoloader/Autoloader.php(264): include_once('/srv/webbmd/app...')
+#3 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#4 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#6 [internal function]: spl_autoload_call()
+#7 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#8 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-20 10:19:26 --> require(../ThirdParty/PHPMailer/src/Exception.php): failed to open stream: No such file or directory
+#0 /srv/webbmd/app/Controllers/Transcribe.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(18): require()
+#2 /srv/webbmd/system/Autoloader/Autoloader.php(264): include_once('/srv/webbmd/app...')
+#3 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#4 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#6 [internal function]: spl_autoload_call()
+#7 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#8 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-20 10:19:57 --> require(./ThirdParty/PHPMailer/src/Exception.php): failed to open stream: No such file or directory
+#0 /srv/webbmd/app/Controllers/Transcribe.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(18): require()
+#2 /srv/webbmd/system/Autoloader/Autoloader.php(264): include_once('/srv/webbmd/app...')
+#3 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#4 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#6 [internal function]: spl_autoload_call()
+#7 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#8 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-20 10:20:53 --> require(App/ThirdParty/PHPMailer/src/Exception.php): failed to open stream: No such file or directory
+#0 /srv/webbmd/app/Controllers/Transcribe.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(18): require()
+#2 /srv/webbmd/system/Autoloader/Autoloader.php(264): include_once('/srv/webbmd/app...')
+#3 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#4 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#6 [internal function]: spl_autoload_call()
+#7 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#8 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-20 10:26:19 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Controllers/Transcribe.php(1012): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->send_email()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

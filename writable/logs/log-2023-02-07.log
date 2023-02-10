@@ -1,0 +1,58 @@
+CRITICAL - 2023-02-07 03:28:31 --> syntax error, unexpected ''project_index'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /srv/freeukgen/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/freeukgen/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /srv/freeukgen/app/Controllers/Home.php(19): spl_autoload_call()
+#4 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#5 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-02-07 04:18:15 --> syntax error, unexpected ')', expecting ']'
+#0 /srv/freeukgen/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/freeukgen/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/freeukgen/system/CodeIgniter.php(797): class_exists()
+#5 /srv/freeukgen/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-02-07 04:18:45 --> syntax error, unexpected ';', expecting ')'
+#0 /srv/freeukgen/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/freeukgen/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/freeukgen/system/CodeIgniter.php(797): class_exists()
+#5 /srv/freeukgen/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-02-07 04:19:59 --> Trying to get property 'environment' of non-object
+#0 /srv/freeukgen/app/Controllers/Identity.php(144): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Identity->create_identity_step2()
+#2 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-07 04:20:47 --> Undefined index: environment
+#0 /srv/freeukgen/app/Controllers/Identity.php(144): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Identity->create_identity_step2()
+#2 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-07 04:21:26 --> Undefined offset: 0
+#0 /srv/freeukgen/app/Controllers/Identity.php(144): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Identity->create_identity_step2()
+#2 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-07 04:22:42 --> Undefined index: autouploadurltest
+#0 /srv/freeukgen/app/Controllers/Identity.php(154): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Identity->create_identity_step2()
+#2 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

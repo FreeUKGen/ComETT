@@ -1,0 +1,48 @@
+CRITICAL - 2023-01-29 08:46:38 --> syntax error, unexpected ']', expecting ')'
+#0 /srv/webbmd/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2023-01-29 08:46:54 --> syntax error, unexpected ']', expecting ')'
+#0 /srv/webbmd/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2023-01-29 09:47:22 --> syntax error, unexpected 'function' (T_FUNCTION), expecting ')'
+#0 /srv/webbmd/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2023-01-29 09:51:51 --> syntax error, unexpected '/', expecting '{'
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /srv/webbmd/system/Filters/Filters.php(166): spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-29 09:52:38 --> syntax error, unexpected 'use' (T_USE), expecting ';' or ','
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /srv/webbmd/system/Filters/Filters.php(166): spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-29 10:46:52 --> Table 'webBMD.webBMD_table_details' doesn't exist
+CRITICAL - 2023-01-29 10:46:52 --> Table 'webBMD.webBMD_table_details' doesn't exist
+#0 /srv/webbmd/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /srv/webbmd/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/webbmd/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/webbmd/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/webbmd/system/Model.php(145): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/webbmd/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /srv/webbmd/app/Helpers/transcribe_helper.php(383): CodeIgniter\BaseModel->find()
+#7 /srv/webbmd/app/Controllers/Deaths.php(36): App\Controllers\transcribe_initialise_step1()
+#8 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#9 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}

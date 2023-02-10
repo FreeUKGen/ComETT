@@ -1,0 +1,78 @@
+CRITICAL - 2022-06-21 08:34:55 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(29): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:35:02 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(29): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:35:08 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(29): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:35:09 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(29): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:35:10 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(29): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:35:30 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(29): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:35:32 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(29): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:35:33 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(29): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:35:35 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(29): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:35:56 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /srv/webbmd/app/Controllers/Births.php(19): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Births->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-21 08:57:45 --> Undefined index: BMD_sindex
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(320): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Births.php(36): App\Controllers\transcribe_initialise_step1()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

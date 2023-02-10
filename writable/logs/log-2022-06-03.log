@@ -1,0 +1,41 @@
+CRITICAL - 2022-06-03 02:49:44 --> Undefined index: Change_date
+#0 /srv/webbmd/app/Views/linBMD2/user_home.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Transcribe.php(86): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->transcribe_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-03 06:30:05 --> Undefined variable: search_result
+#0 /srv/webbmd/app/Controllers/Transcribe.php(853): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->search_synonyms()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-03 06:41:11 --> Duplicate entry 'HAVERFRDWEST' for key 'District'
+CRITICAL - 2022-06-03 06:41:11 --> Duplicate entry 'HAVERFRDWEST' for key 'District'
+#0 /srv/webbmd/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /srv/webbmd/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/webbmd/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/webbmd/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/webbmd/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/webbmd/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /srv/webbmd/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /srv/webbmd/app/Helpers/transcribe_helper.php(562): CodeIgniter\Model->insert()
+#8 /srv/webbmd/app/Controllers/Marriages.php(46): App\Controllers\transcribe_validate_confirm_district_inputs()
+#9 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#10 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-06-03 12:34:27 --> Undefined offset: 2
+#0 /srv/webbmd/app/Controllers/Housekeeping.php(136): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Housekeeping->districts_refresh()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

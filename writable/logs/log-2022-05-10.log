@@ -1,0 +1,50 @@
+CRITICAL - 2022-05-10 12:21:32 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(178): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Births.php(25): App\Controllers\transcribe_initialise_step1()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-10 12:22:52 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(178): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Births.php(25): App\Controllers\transcribe_initialise_step1()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-10 12:26:31 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Controllers/Identity.php(146): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Identity->create_identity_step2()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-10 12:52:03 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Controllers/Identity.php(146): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Identity->create_identity_step2()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-10 12:54:48 --> syntax error, unexpected ']', expecting ')'
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-10 12:54:53 --> syntax error, unexpected ']', expecting ')'
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

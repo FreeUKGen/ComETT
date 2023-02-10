@@ -1,0 +1,52 @@
+ERROR - 2022-06-11 04:52:35 --> Duplicate entry '1995MA001' for key 'BMD_file_name'
+CRITICAL - 2022-06-11 04:52:35 --> Duplicate entry '1995MA001' for key 'BMD_file_name'
+#0 /srv/webbmd/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /srv/webbmd/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/webbmd/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/webbmd/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/webbmd/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/webbmd/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /srv/webbmd/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /srv/webbmd/app/Controllers/Header.php(335): CodeIgniter\Model->insert()
+#8 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Header->create_BMD_step2()
+#9 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-11 04:59:05 --> Duplicate entry '1995MA001' for key 'BMD_file_name'
+CRITICAL - 2022-06-11 04:59:05 --> Duplicate entry '1995MA001' for key 'BMD_file_name'
+#0 /srv/webbmd/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /srv/webbmd/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/webbmd/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/webbmd/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/webbmd/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/webbmd/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /srv/webbmd/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /srv/webbmd/app/Controllers/Header.php(335): CodeIgniter\Model->insert()
+#8 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Header->create_BMD_step2()
+#9 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-11 05:06:53 --> Duplicate entry '1995MA001' for key 'BMD_file_name'
+CRITICAL - 2022-06-11 05:06:53 --> Duplicate entry '1995MA001' for key 'BMD_file_name'
+#0 /srv/webbmd/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /srv/webbmd/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/webbmd/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/webbmd/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/webbmd/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /srv/webbmd/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /srv/webbmd/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /srv/webbmd/app/Controllers/Header.php(335): CodeIgniter\Model->insert()
+#8 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Header->create_BMD_step2()
+#9 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-11 13:08:36 --> Undefined variable: session
+#0 /srv/webbmd/app/Controllers/Marriages.php(144): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->select_comment()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

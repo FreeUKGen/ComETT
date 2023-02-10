@@ -1,0 +1,195 @@
+CRITICAL - 2022-06-24 02:41:48 --> exif_read_data(): Unable to open file
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Views/linBMD2/transcribe_image.php(9): exif_read_data()
+#2 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#3 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /srv/webbmd/app/Helpers/transcribe_helper.php(394): view()
+#6 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#8 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-24 02:52:12 --> Undefined variable: file
+#0 /srv/webbmd/app/Controllers/Transcribe.php(207): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->transcribe_next_action()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-24 02:53:01 --> exif_read_data(): Unable to open file
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(208): exif_read_data()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->transcribe_next_action()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-24 03:06:57 --> exif_read_data(1995M-A-002.jpg): File not supported
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(208): exif_read_data()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->transcribe_next_action()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-24 03:27:15 --> exif_read_data(1995M-A-002.jpg): File not supported
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(257): exif_read_data()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->transcribe_next_action()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-24 03:39:18 --> Undefined variable: e
+#0 /srv/webbmd/app/Controllers/Transcribe.php(207): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->transcribe_next_action()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-24 03:50:31 --> getimagesize(/srv/webbmd/public/Users/dreamstogo/Scans/1993M-A-0002.jpg): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(205): getimagesize()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->transcribe_next_action()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-24 08:15:18 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Views/linBMD2/transcribe_comments_enter.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Marriages.php(162): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->select_comment()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-24 08:17:23 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Views/linBMD2/transcribe_comments_enter.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Marriages.php(162): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->select_comment()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-24 09:16:11 --> Undefined variable: table_details_model
+#0 /srv/webbmd/app/Views/linBMD2/transcribe.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#5 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-24 10:40:52 --> Undefined variable: detail
+#0 /srv/webbmd/app/Views/linBMD2/transcribe.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#5 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-24 10:42:58 --> syntax error, unexpected end of file
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#3 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-24 11:18:01 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#3 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-24 11:28:58 --> syntax error, unexpected '$td' (T_VARIABLE), expecting ')'
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#3 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-24 11:29:47 --> Array to string conversion
+#0 /srv/webbmd/app/Views/linBMD2/transcribe.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#5 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-24 11:35:16 --> Undefined variable: tn
+#0 /srv/webbmd/app/Views/linBMD2/transcribe.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#5 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-24 11:38:46 --> Array to string conversion
+#0 /srv/webbmd/app/Views/linBMD2/transcribe.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#5 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-24 21:50:40 --> Undefined variable: BMD_surname
+#0 /srv/webbmd/app/Views/linBMD2/transcribe.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#5 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-24 21:53:08 --> Undefined variable: BMD_surname
+#0 /srv/webbmd/app/Views/linBMD2/transcribe.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#5 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}

@@ -1,0 +1,49 @@
+CRITICAL - 2022-05-21 11:53:22 --> Undefined variable: search_result
+#0 /srv/webbmd/app/Controllers/Transcribe.php(773): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->search_synonyms()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-21 11:53:25 --> Undefined variable: search_result
+#0 /srv/webbmd/app/Controllers/Transcribe.php(773): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->search_synonyms()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-21 23:12:04 --> syntax error, unexpected '?>', expecting ')'
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(305): view()
+#3 /srv/webbmd/app/Controllers/Marriages.php(27): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-21 23:12:26 --> Undefined variable: session
+#0 /srv/webbmd/app/Views/templates/footer.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(305): view()
+#5 /srv/webbmd/app/Controllers/Marriages.php(27): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-21 23:29:49 --> exif_read_data(1993D-A-0010.jpg): File not supported
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Views/linBMD2/transcribe_image.php(9): exif_read_data()
+#2 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#3 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /srv/webbmd/app/Helpers/transcribe_helper.php(282): view()
+#6 /srv/webbmd/app/Controllers/Deaths.php(27): App\Controllers\transcribe_show_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#8 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

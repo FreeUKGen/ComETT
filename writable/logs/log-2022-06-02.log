@@ -1,0 +1,172 @@
+CRITICAL - 2022-06-02 08:01:59 --> syntax error, unexpected 'code' (T_STRING)
+#0 /srv/webbmd/app/Controllers/Marriages.php(19): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Marriages->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 08:15:51 --> Undefined index: registration
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(350): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(40): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-02 08:17:49 --> Undefined index: month
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(371): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(40): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-02 08:26:29 --> in_array() expects parameter 2 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(1404): in_array()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(486): App\Controllers\test_marriages_after()
+#3 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-02 08:32:30 --> Undefined index: 
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1108): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(519): App\Controllers\transcribe_validate_volume_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 08:50:07 --> Undefined variable: quarter
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1118): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(519): App\Controllers\transcribe_validate_volume_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 09:04:27 --> syntax error, unexpected '=', expecting ']'
+#0 /srv/webbmd/app/Controllers/Marriages.php(16): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Marriages->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 09:06:26 --> Undefined index: 
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1097): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(519): App\Controllers\transcribe_validate_volume_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 10:13:41 --> Undefined index: 0193
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1108): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(519): App\Controllers\transcribe_validate_volume_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 10:28:14 --> Undefined variable: marr_month
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1111): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(519): App\Controllers\transcribe_validate_volume_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 10:28:25 --> Undefined variable: marr_month
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1111): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(519): App\Controllers\transcribe_validate_volume_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 10:29:15 --> Undefined index: 
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1111): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(519): App\Controllers\transcribe_validate_volume_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 10:29:48 --> Undefined index: 
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1111): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(519): App\Controllers\transcribe_validate_volume_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 10:30:44 --> Undefined index: 
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1111): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(519): App\Controllers\transcribe_validate_volume_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 10:35:32 --> Indirect modification of overloaded property CodeIgniter\Session\Session::$transcribe_allocation has no effect
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(937): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(515): App\Controllers\transcribe_validate_registration_select_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 11:26:52 --> Indirect modification of overloaded property CodeIgniter\Session\Session::$transcribe_allocation has no effect
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(940): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(515): App\Controllers\transcribe_validate_registration_select_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 11:39:10 --> syntax error, unexpected 'case' (T_CASE)
+#0 /srv/webbmd/app/Controllers/Marriages.php(19): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Marriages->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 11:39:44 --> syntax error, unexpected 'case' (T_CASE)
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 11:40:52 --> Indirect modification of overloaded property CodeIgniter\Session\Session::$transcribe_allocation has no effect
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(942): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(515): App\Controllers\transcribe_validate_registration_select_tests()
+#2 /srv/webbmd/app/Controllers/Marriages.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 12:16:01 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

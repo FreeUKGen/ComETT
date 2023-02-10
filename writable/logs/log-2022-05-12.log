@@ -1,0 +1,72 @@
+CRITICAL - 2022-05-12 04:25:22 --> Using $this when not in object context
+#0 /srv/webbmd/app/Controllers/Births.php(82): App\Controllers\transcribe_update()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-12 04:27:27 --> Undefined variable: session
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(903): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(898): App\Controllers\scroll_step()
+#2 /srv/webbmd/app/Controllers/Births.php(82): App\Controllers\transcribe_update()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-12 08:37:14 --> Undefined index: BMD_panzoom_x
+#0 /srv/webbmd/app/Controllers/Transcribe.php(152): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->transcribe_next_action()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-12 08:39:50 --> syntax error, unexpected ')'
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 08:40:09 --> syntax error, unexpected ')'
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 09:34:27 --> Use of undefined constant step - assumed 'step' (this will throw an Error in a future version of PHP)
+#0 /srv/webbmd/app/Views/linBMD2/transcribe_image.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(271): view()
+#5 /srv/webbmd/app/Controllers/Births.php(27): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-12 12:09:32 --> Undefined index: BMD_image_zoom
+#0 /srv/webbmd/app/Controllers/Transcribe.php(879): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->image_parameters_step1()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-12 12:39:35 --> syntax error, unexpected ''BMD_image_scroll_step'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,69 @@
+CRITICAL - 2022-05-22 05:35:22 --> syntax error, unexpected ':', expecting ';'
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(283): view()
+#3 /srv/webbmd/app/Controllers/Deaths.php(27): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-22 07:18:47 --> syntax error, unexpected end of file
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-22 07:21:50 --> Undefined index: page
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(331): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Deaths.php(40): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-22 08:27:28 --> Undefined index: page
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(331): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Deaths.php(40): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-22 08:35:19 --> Undefined index: page
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(331): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Deaths.php(40): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-22 09:42:31 --> syntax error, unexpected '26' (T_LNUMBER), expecting ']'
+#0 /srv/webbmd/app/Controllers/Home.php(11): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Home->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-22 09:57:47 --> syntax error, unexpected ';', expecting ')'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-22 09:58:19 --> syntax error, unexpected ';', expecting ')'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-22 09:59:14 --> syntax error, unexpected ';', expecting ')'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

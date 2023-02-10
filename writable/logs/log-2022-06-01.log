@@ -1,0 +1,79 @@
+CRITICAL - 2022-06-01 04:45:52 --> exif_read_data(1994B-A-0001.jpg): File not supported
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Views/linBMD2/transcribe_image.php(9): exif_read_data()
+#2 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#3 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /srv/webbmd/app/Helpers/transcribe_helper.php(295): view()
+#6 /srv/webbmd/app/Controllers/Births.php(27): App\Controllers\transcribe_show_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#8 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-01 05:44:07 --> syntax error, unexpected '==' (T_IS_EQUAL)
+#0 /srv/webbmd/app/Controllers/Births.php(19): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Births->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 05:44:37 --> Undefined index: partnername
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(352): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Births.php(40): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-01 06:21:13 --> Call to undefined function App\Controllers\births_test_standard()
+#0 /srv/webbmd/app/Controllers/Births.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 06:22:55 --> Call to undefined function App\Controllers\mariages_test_standard()
+#0 /srv/webbmd/app/Controllers/Births.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 07:22:53 --> exif_read_data(1994B-A-002.jpg): File not supported
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Views/linBMD2/transcribe_image.php(9): exif_read_data()
+#2 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#3 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /srv/webbmd/app/Helpers/transcribe_helper.php(295): view()
+#6 /srv/webbmd/app/Controllers/Births.php(27): App\Controllers\transcribe_show_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#8 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-01 08:57:06 --> Undefined variable: search_result
+#0 /srv/webbmd/app/Controllers/Transcribe.php(796): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->search_synonyms()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 08:57:10 --> Undefined variable: search_result
+#0 /srv/webbmd/app/Controllers/Transcribe.php(796): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->search_synonyms()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 09:46:42 --> syntax error, unexpected '<'
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

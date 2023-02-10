@@ -1,0 +1,6 @@
+CRITICAL - 2022-07-01 04:59:05 --> Call to undefined function App\Controllers\transcribe_get_confirm_firstname_inputs()
+#0 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#1 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

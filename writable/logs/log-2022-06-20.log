@@ -1,0 +1,36 @@
+CRITICAL - 2022-06-20 09:31:55 --> Undefined variable: lines_span
+#0 /srv/webbmd/app/Views/linBMD2/transcribe_births_show_details.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(364): view()
+#5 /srv/webbmd/app/Controllers/Births.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-20 09:33:02 --> Undefined variable: lines_index
+#0 /srv/webbmd/app/Views/linBMD2/transcribe_births_show_details.php(85): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(364): view()
+#5 /srv/webbmd/app/Controllers/Births.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-20 09:36:49 --> Undefined variable: ds
+#0 /srv/webbmd/app/Views/linBMD2/transcribe_births_show_details.php(71): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(364): view()
+#5 /srv/webbmd/app/Controllers/Births.php(38): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}

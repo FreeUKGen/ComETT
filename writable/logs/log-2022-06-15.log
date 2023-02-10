@@ -1,0 +1,59 @@
+CRITICAL - 2022-06-15 01:56:40 --> Invalid file: linBMD2/transcribe_births_show_comments.php
+#0 /srv/webbmd/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Controllers/Births.php(164): view()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->select_comment()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-15 04:00:59 --> Class 'App\Controllers\Detail_Comments_Model' not found
+#0 /srv/webbmd/app/Controllers/Births.php(160): App\Controllers\comment_select()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->select_comment()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-15 04:01:58 --> syntax error, unexpected 'protected' (T_PROTECTED), expecting ';' or ','
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /srv/webbmd/app/Helpers/transcribe_helper.php(110): spl_autoload_call()
+#4 /srv/webbmd/app/Controllers/Births.php(160): App\Controllers\comment_select()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->select_comment()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 04:02:38 --> Use of undefined constant transcribe_header - assumed 'transcribe_header' (this will throw an Error in a future version of PHP)
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(117): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Births.php(160): App\Controllers\comment_select()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->select_comment()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-15 04:07:41 --> Undefined variable: transcribe_header
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(117): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Births.php(160): App\Controllers\comment_select()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->select_comment()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-15 09:59:59 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(121): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Births.php(160): App\Controllers\comment_select()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->select_comment()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-15 10:01:14 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(126): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Births.php(160): App\Controllers\comment_select()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->select_comment()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

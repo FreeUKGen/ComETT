@@ -1,0 +1,15 @@
+ERROR - 2023-02-01 11:57:42 --> Table 'webBMD.webBMD_table_details' doesn't exist
+CRITICAL - 2023-02-01 11:57:42 --> Table 'webBMD.webBMD_table_details' doesn't exist
+#0 /srv/webbmd/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /srv/webbmd/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/webbmd/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/webbmd/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/webbmd/system/Model.php(145): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/webbmd/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /srv/webbmd/app/Helpers/transcribe_helper.php(383): CodeIgniter\BaseModel->find()
+#7 /srv/webbmd/app/Controllers/Deaths.php(36): App\Controllers\transcribe_initialise_step1()
+#8 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#9 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}

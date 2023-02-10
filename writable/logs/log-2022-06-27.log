@@ -1,0 +1,80 @@
+CRITICAL - 2022-06-27 08:11:49 --> syntax error, unexpected '')) ?>" method="post">' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#3 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-27 08:20:49 --> Undefined index: line
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(441): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(51): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-27 08:24:54 --> syntax error, unexpected '?>'
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(395): view()
+#3 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-27 09:00:55 --> Undefined index: dis_number
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(477): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(51): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-27 09:02:02 --> Undefined index: dis_number
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(477): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(51): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-27 09:02:20 --> Undefined index: registration
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(447): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(51): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-27 09:05:04 --> Undefined index: registration
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(447): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(51): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-27 10:25:22 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(399): view()
+#3 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-27 10:26:07 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(399): view()
+#3 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

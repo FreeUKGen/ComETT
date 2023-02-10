@@ -1,0 +1,156 @@
+CRITICAL - 2022-05-19 02:34:00 --> Undefined index: BMD_admin
+#0 /srv/webbmd/app/Views/linBMD2/housekeeping_menu.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Housekeeping.php(44): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Housekeeping->index()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 02:34:04 --> Undefined index: BMD_admin
+#0 /srv/webbmd/app/Views/linBMD2/housekeeping_menu.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Housekeeping.php(44): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Housekeeping->index()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 02:36:10 --> There is no data to update.
+#0 /srv/webbmd/system/BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+#1 /srv/webbmd/system/Model.php(651): CodeIgniter\BaseModel->update()
+#2 /srv/webbmd/app/Controllers/Housekeeping.php(134): CodeIgniter\Model->update()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Housekeeping->districts_refresh()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 02:49:26 --> Undefined variable: district_name
+#0 /srv/webbmd/app/Controllers/Housekeeping.php(134): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Housekeeping->districts_refresh()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 04:32:51 --> syntax error, unexpected ','
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 04:33:47 --> syntax error, unexpected ','
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /srv/webbmd/system/CodeIgniter.php(797): class_exists()
+#5 /srv/webbmd/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 04:34:15 --> syntax error, unexpected 'if' (T_IF)
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 04:35:05 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 04:35:45 --> syntax error, unexpected ','
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 06:38:49 --> Undefined variable: search_result
+#0 /srv/webbmd/app/Controllers/Transcribe.php(776): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->search_synonyms()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 09:28:38 --> syntax error, unexpected ';', expecting ')'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 09:29:00 --> syntax error, unexpected ';', expecting ')'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 10:05:27 --> Undefined variable: search_result
+#0 /srv/webbmd/app/Controllers/Transcribe.php(776): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->search_synonyms()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 10:05:37 --> Undefined variable: search_result
+#0 /srv/webbmd/app/Controllers/Transcribe.php(776): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->search_synonyms()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 10:05:45 --> Undefined index: BMD_user
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(753): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(46): App\Controllers\transcribe_validate_confirm_district_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 21:31:56 --> Undefined variable: session
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(938): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(382): App\Controllers\transcribe_validate_standard_tests()
+#2 /srv/webbmd/app/Controllers/Births.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 21:47:43 --> Undefined index: BMD_image_zoom
+#0 /srv/webbmd/app/Controllers/Transcribe.php(719): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->verify_BMD_trans_step1()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 21:48:32 --> Undefined variable: session
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(939): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(382): App\Controllers\transcribe_validate_standard_tests()
+#2 /srv/webbmd/app/Controllers/Births.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 22:00:01 --> Undefined variable: detail_data_model
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(969): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(382): App\Controllers\transcribe_validate_standard_tests()
+#2 /srv/webbmd/app/Controllers/Births.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

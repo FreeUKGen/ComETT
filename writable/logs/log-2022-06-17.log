@@ -1,0 +1,83 @@
+CRITICAL - 2022-06-17 08:01:00 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(364): view()
+#3 /srv/webbmd/app/Controllers/Births.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-17 08:01:38 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(364): view()
+#3 /srv/webbmd/app/Controllers/Births.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-17 08:03:41 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(364): view()
+#3 /srv/webbmd/app/Controllers/Births.php(38): App\Controllers\transcribe_show_step1()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-17 08:11:20 --> Class 'Detail_Comments_Model' not found
+#0 /srv/webbmd/system/View/View.php(210): include()
+#1 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /srv/webbmd/app/Helpers/transcribe_helper.php(364): view()
+#4 /srv/webbmd/app/Controllers/Births.php(38): App\Controllers\transcribe_show_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-17 08:28:17 --> Class 'App\Controllers\Detail_Comments_Model' not found
+#0 /srv/webbmd/app/Controllers/Transcribe.php(493): App\Controllers\Transcribe->create_BMD_file()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->store_BMD_file()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-17 08:29:01 --> Undefined index: BMD_firstname
+#0 /srv/webbmd/app/Controllers/Transcribe.php(363): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(494): App\Controllers\Transcribe->create_BMD_file()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->store_BMD_file()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-17 08:30:01 --> Undefined index: BMD_firstname
+#0 /srv/webbmd/app/Controllers/Transcribe.php(363): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(494): App\Controllers\Transcribe->create_BMD_file()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->store_BMD_file()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-17 08:57:03 --> Class 'Detail_Comments_Model' not found
+#0 /srv/webbmd/system/View/View.php(210): include()
+#1 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /srv/webbmd/app/Helpers/transcribe_helper.php(364): view()
+#4 /srv/webbmd/app/Controllers/Marriages.php(38): App\Controllers\transcribe_show_step1()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-17 11:06:23 --> Undefined index: 0193
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(705): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(77): App\Controllers\transcribe_validate_confirm_volume_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->transcribe_marriages_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

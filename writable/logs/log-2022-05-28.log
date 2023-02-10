@@ -1,0 +1,73 @@
+CRITICAL - 2022-05-28 00:09:04 --> syntax error, unexpected '"registration"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /srv/webbmd/app/Controllers/Deaths.php(19): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Deaths->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-28 03:36:50 --> syntax error, unexpected ';', expecting ')'
+#0 /srv/webbmd/app/Controllers/Transcribe.php(28): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-28 09:20:51 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(192): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Deaths.php(25): App\Controllers\transcribe_initialise_step1()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-28 11:54:10 --> Undefined variable: sw
+#0 /srv/webbmd/app/Views/linBMD2/manage_syndicates.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Syndicate.php(51): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Syndicate->manage_syndicates()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-28 20:24:36 --> Undefined variable: dd
+#0 /srv/webbmd/app/Views/linBMD2/manage_surnames.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Surname.php(43): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Surname->manage_surnames()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-28 20:28:12 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Controllers/Surname.php(43): view()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Surname->manage_surnames()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-28 20:29:26 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /srv/webbmd/app/Controllers/Surname.php(43): view()
+#3 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Surname->manage_surnames()
+#4 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-28 21:21:24 --> Invalid argument supplied for foreach()
+#0 /srv/webbmd/app/Views/linBMD2/manage_firstnames.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Firstname.php(43): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Firstname->manage_firstnames()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

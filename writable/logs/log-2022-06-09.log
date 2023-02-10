@@ -1,0 +1,11 @@
+CRITICAL - 2022-06-09 03:58:22 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Views/linBMD2/housekeeping_menu.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Housekeeping.php(44): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Housekeeping->index()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

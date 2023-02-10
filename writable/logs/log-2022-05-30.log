@@ -1,0 +1,7 @@
+CRITICAL - 2022-05-30 02:58:51 --> Function name must be a string
+#0 /srv/webbmd/app/Controllers/Transcribe.php(401): App\Controllers\Transcribe->create_BMD_file()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->store_BMD_file()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

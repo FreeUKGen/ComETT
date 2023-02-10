@@ -1,0 +1,19 @@
+CRITICAL - 2022-06-13 05:07:02 --> Trying to access array offset on value of type null
+#0 /srv/webbmd/app/Helpers/backup_helper.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Home.php(75): App\Controllers\database_backup()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Home->signout()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-13 23:46:06 --> Undefined variable: session
+#0 /srv/webbmd/app/Views/templates/header.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Controllers/Identity.php(25): view()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

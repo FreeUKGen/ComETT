@@ -1,0 +1,55 @@
+CRITICAL - 2022-05-13 07:36:27 --> Undefined variable: session_image_r
+#0 /srv/webbmd/app/Controllers/Transcribe.php(935): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->image_parameters_step2()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-13 09:58:14 --> syntax error, unexpected ''BMD_panzoom-x'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /srv/webbmd/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /srv/webbmd/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /srv/webbmd/app/Helpers/transcribe_helper.php(374): spl_autoload_call()
+#4 /srv/webbmd/app/Controllers/Births.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#5 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step2()
+#6 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-13 11:15:22 --> Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation 'like'
+CRITICAL - 2022-05-13 11:15:22 --> Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation 'like'
+#0 /srv/webbmd/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /srv/webbmd/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/webbmd/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/webbmd/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/webbmd/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/webbmd/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /srv/webbmd/app/Controllers/Transcribe.php(787): CodeIgniter\BaseModel->findAll()
+#7 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->search_districts()
+#8 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-13 22:39:43 --> Undefined variable: session
+#0 /srv/webbmd/app/Controllers/Transcribe.php(1008): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->advance_image()
+#2 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-13 23:02:39 --> Undefined index: familyname
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(314): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(1008): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->advance_image()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-13 23:37:02 --> Undefined index: familyname
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(314): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Transcribe.php(1008): App\Controllers\transcribe_get_transcribe_inputs()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->advance_image()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

@@ -1,0 +1,38 @@
+CRITICAL - 2022-04-30 05:44:21 --> Undefined variable: transcribe_allocation
+#0 /srv/webbmd/app/Views/linBMD2/transcribe_image.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(273): view()
+#5 /srv/webbmd/app/Controllers/Births.php(27): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-30 05:45:11 --> Undefined variable: transcribe_allocation
+#0 /srv/webbmd/app/Views/linBMD2/transcribe_image.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#2 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/webbmd/app/Helpers/transcribe_helper.php(273): view()
+#5 /srv/webbmd/app/Controllers/Births.php(27): App\Controllers\transcribe_show_step1()
+#6 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-30 05:45:44 --> exif_read_data(): HTTP request failed! HTTP/1.1 401 Unauthorized
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Views/linBMD2/transcribe_image.php(7): exif_read_data()
+#2 /srv/webbmd/system/View/View.php(210): include('/srv/webbmd/app...')
+#3 /srv/webbmd/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /srv/webbmd/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /srv/webbmd/app/Helpers/transcribe_helper.php(273): view()
+#6 /srv/webbmd/app/Controllers/Births.php(27): App\Controllers\transcribe_show_step1()
+#7 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#8 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#9 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

@@ -1,0 +1,24 @@
+CRITICAL - 2022-05-27 23:32:53 --> syntax error, unexpected ';', expecting ')'
+#0 /srv/webbmd/app/Controllers/Deaths.php(19): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Deaths->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-27 23:33:31 --> syntax error, unexpected ')'
+#0 /srv/webbmd/app/Controllers/Deaths.php(19): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Deaths->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-27 23:47:01 --> Undefined variable: DOB_year
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(1291): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Helpers/transcribe_helper.php(1131): App\Controllers\test_DOB()
+#2 /srv/webbmd/app/Helpers/transcribe_helper.php(471): App\Controllers\test_deaths_prior()
+#3 /srv/webbmd/app/Controllers/Deaths.php(41): App\Controllers\transcribe_validate_transcribe_inputs()
+#4 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step2()
+#5 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

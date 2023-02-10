@@ -1,0 +1,74 @@
+CRITICAL - 2023-02-05 06:57:51 --> Class 'App\Controllers\Projects_Model' not found
+#0 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-05 07:01:48 --> Class 'App\Controllers\Projects_Model' not found
+#0 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-05 07:04:31 --> Cannot use [] for reading
+#0 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-05 08:29:34 --> Undefined variable: projects
+#0 /srv/freeukgen/app/Controllers/Home.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#2 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-05 08:31:16 --> Invalid argument supplied for foreach()
+#0 /srv/freeukgen/app/Views/linBMD2/project_select.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/system/View/View.php(210): include('/srv/freeukgen/...')
+#2 /srv/freeukgen/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/freeukgen/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/freeukgen/app/Controllers/Home.php(68): view()
+#5 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-05 08:43:04 --> Invalid argument supplied for foreach()
+#0 /srv/freeukgen/app/Views/linBMD2/project_select.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/system/View/View.php(210): include('/srv/freeukgen/...')
+#2 /srv/freeukgen/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/freeukgen/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/freeukgen/app/Controllers/Home.php(68): view()
+#5 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-05 08:56:24 --> Trying to access array offset on value of type null
+#0 /srv/freeukgen/app/Helpers/backup_helper.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/app/Controllers/Home.php(83): App\Controllers\database_backup()
+#2 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->signout()
+#3 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-02-05 09:20:24 --> Trying to access array offset on value of type null
+#0 /srv/freeukgen/app/Helpers/backup_helper.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/app/Controllers/Home.php(81): App\Controllers\database_backup()
+#2 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->signout()
+#3 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-02-05 10:05:33 --> Undefined index: project_icon
+#0 /srv/freeukgen/app/Views/linBMD2/project_select.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/freeukgen/system/View/View.php(210): include('/srv/freeukgen/...')
+#2 /srv/freeukgen/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/freeukgen/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/freeukgen/app/Controllers/Home.php(68): view()
+#5 /srv/freeukgen/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /srv/freeukgen/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/freeukgen/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/freeukgen/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,71 @@
+CRITICAL - 2022-04-19 04:28:32 --> parse_ini_file(/srv/CodeIgniter/linBMD2_announce.txt): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/CodeIgniter/app/Controllers/Home.php(25): parse_ini_file()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#3 /srv/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/CodeIgniter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-19 04:32:42 --> Error connecting to the database: Access denied for user '****'@'localhost'
+CRITICAL - 2022-04-19 04:32:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+#0 /srv/CodeIgniter/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /srv/CodeIgniter/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 /srv/CodeIgniter/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /srv/CodeIgniter/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /srv/CodeIgniter/app/Controllers/Home.php(34): CodeIgniter\BaseModel->findAll()
+#5 /srv/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /srv/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/CodeIgniter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-19 05:23:25 --> Error connecting to the database: Access denied for user '****'@'localhost'
+CRITICAL - 2022-04-19 05:23:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+#0 /srv/CodeIgniter/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /srv/CodeIgniter/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 /srv/CodeIgniter/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /srv/CodeIgniter/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /srv/CodeIgniter/app/Controllers/Home.php(34): CodeIgniter\BaseModel->findAll()
+#5 /srv/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /srv/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /srv/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/CodeIgniter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-19 09:43:42 --> fopen(/srv/CodeIgniter/linBMD2.ini): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/CodeIgniter/app/Controllers/Identity.php(101): fopen()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step2()
+#3 /srv/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/CodeIgniter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-19 10:27:24 --> Trying to access array offset on value of type null
+#0 /srv/CodeIgniter/app/Controllers/Identity.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step1()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /srv/CodeIgniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/CodeIgniter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-19 20:23:46 --> fopen(/srv/webbmd/linBMD2.ini): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Identity.php(101): fopen()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-19 20:24:28 --> fopen(/srv/webbmd/linBMD2.ini): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Identity.php(101): fopen()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-19 21:40:51 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+#0 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Transcribe->send_email()
+#1 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

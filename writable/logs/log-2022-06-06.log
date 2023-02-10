@@ -1,0 +1,21 @@
+CRITICAL - 2022-06-06 14:45:08 --> syntax error, unexpected '"', expecting ']'
+#0 /srv/webbmd/app/Controllers/Marriages.php(16): helper()
+#1 /srv/webbmd/system/CodeIgniter.php(809): App\Controllers\Marriages->__construct()
+#2 /srv/webbmd/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-06 15:03:27 --> Use of undefined constant B - assumed 'B' (this will throw an Error in a future version of PHP)
+#0 /srv/webbmd/app/Helpers/transcribe_helper.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/webbmd/app/Controllers/Marriages.php(131): App\Controllers\comment_update()
+#2 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Marriages->comment_step2()
+#3 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-06 22:57:31 --> Too few arguments to function App\Controllers\Identity::admin_user_step2(), 0 passed in /srv/webbmd/system/CodeIgniter.php on line 832 and exactly 1 expected
+#0 /srv/webbmd/system/CodeIgniter.php(832): App\Controllers\Identity->admin_user_step2()
+#1 /srv/webbmd/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /srv/webbmd/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/webbmd/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
