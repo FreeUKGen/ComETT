@@ -1,0 +1,57 @@
+<!--
+
+This is the FreeBMD index.html view file for linBMD2. 
+If changed it should be uploaded to,
+https://www.freebmd.org.uk/addons/linbmd/index.html
+
+} -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en-US"> 
+<head> 
+<title>FreeBMD - linBMD2 Download</title> 
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+<script src="//m2d.m2.ai/pghb.freebmd.org.uk.js" async  type="text/javascript"></script>
+<script src="//cdn.insurads.com/bootstrap/OFZGGRW5.js" async  type="text/javascript"></script>
+<style type="text/css">
+<!--
+.mobile{display:none}
+@media screen and (max-width: 550px) {
+.desktop {display:none}
+.mobile {display:table-row}
+}
+@media screen and not (max-width: 550px) {
+.desktop {display:table-row}
+.mobile {display:none}
+} -->
+</style>
+
+
+<meta name='pagename' content="linBMD2 Download"> 
+<meta name='member' content='saki'> 
+</head> 
+<body BACKGROUND="/emb3.jpg"> 
+ 
+<h1><a href="/"><img style="border:0" src="/Stamp.gif" height="128" width="216" align="middle" alt="FreeBMD" title="FreeBMD Home Page" class="desktop"><img src="/Stamp-small.gif" height=64 width=108 alt="FreeBMD" class="mobile"></a> 
+linBMD2 Download</h1>
+
+<H2>linBMD2 Current Version</H2>
+
+<p>linBMD2 is a Linux transcription program for the
+FreeBMD project which comes with its own integral Viewer to make it even easier to use. It also features automated uploading 
+of your completed transcriptions to the FreeBMD site. linBMD2 will run on any Linux system. It has been tested on Fedora and Debian, so it should run on any of their derivatives.
+<p>
+Before installing linBMD2 on your machine, please read the linBMD2 user manual, in particular the requirements and installation chapters. You can download the latest user manual from here,</p>
+<br/><br/>
+<p><table border=0 width=80%><tr><td><a href='/addons/linbmd/manual.pdf'><font size=+2>linBMD2 User Manual</font></a></table></p>
+<br/><br/>
+<p>Download the linBMD2 install script using the link below and save a copy on your computer.</p>
+<p>Please do NOT change the default folder where this program installs.  Unless you have a VERY good reasons for doing so, please accept all the defaults by clicking the Next buttons.<p>
+
+<p>After clicking the link below please select "SAVE" and after the download has finished double-click your saved file.</p>
+<p><table border=0 width=80%><tr><td><a href='/addons/linbmd/linBMD2_install.sh'><font size=+2>Download linBMD2 install script.</font></a></table></p>
+<br/>
+<p>If, after using linBMD2, you have any suggestions for improvements, we would appreciate your comments. Please email us at
+<span style="position: relative; top: +3px"><a href="/cgi/connect.pl?f=linBMD2Support.png"><img src="/linBMD2Support.png" style="border:0" alt="Contact"></a></span> </A></p>

@@ -1,0 +1,111 @@
+<!--
+
+This is the FreeBMD index.html view file for linBMD2. 
+If changed it should be uploaded to,
+https://www.freebmd.org.uk/addons/linbmd/index.html
+
+} -->
+
+<!doctype html>
+
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		
+		<!-- this for the autocomplete function -->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		<style>
+			.spinner-border, #districts_staleness_spinner, #districts_refresh_spinner {display:none;}
+			.spinner-border.active, #districts_staleness_spinner.active, #districts_refresh_spinner.active {display:block;}
+			.ui-autocomplete { max-height: 130px; max-width: 190px; overflow-y: auto; overflow-x: hidden; }
+		</style>
+		
+		<title>linBMD2 - A linux based system for FreeBMD transcription.</title>
+		
+		<div class="container-lg">
+			 <div class="row d-flex justify-content-between alert alert-info fw-bold" role="alert">
+				<span>linBMD2 - A linux based system for FreeBMD transcription.</span>
+				<span class=""> </span>
+			</div>
+		</div>
+	</head>
+		
+
+	<body>
+		<div class="container-lg">
+			<div class="row d-flex justify-content-between pl-0">
+				<span>linBMD2 is a Linux transcription program for the FreeBMD project. 
+				It manages the whole transcription process from syndicates, to allocations and scans to transcribe. 
+				It includes many error checking algorithms to enable you to make a transcription as error-free as possible. 
+				You can correct your transcribed data if you find mistakes during your reveiw process before upload.
+				It will upload your finished scan transcription to the FreeBMD servers for you. 
+				You can belong to any number of syndicates, be working on any number of allocations and have any number of scan headers open at any one time.
+				You must be registered on FreeBMD and have your FreeBMD user name and password to hand in order to use this program.</span>
+			</div>
+			
+			<br>
+			<div class="row d-flex justify-content-between pl-0">
+				<span>linBMD2 has been tested on Fedora, Debian and Mageia, so it should run on any of their derivatives, including Ubuntu. For other Linux distributions, please contact linBMD2@mailo.com.</span>
+			</div>
+			
+			<br>
+			<div class="row d-flex justify-content-between pl-0">
+				<span><a class="btn btn-primary mr-0 d-flex flex-column align-items-center fw-bold" href='/addons/linbmd/linBMD2_help.pdf'><font size=+1>Download the linBMD2 User Manual</font></a></span>	
+			</div>
+			
+			<br>
+			<div class="row d-flex justify-content-between pl-0">
+				<span>Before installing the program, please do read the user manual. It includes a step by step guide on how to use the program and describes the operational philosophy behind the program. It's in PDF format.</span>
+			</div>
+			
+			<br>
+			<div class="row d-flex justify-content-between pl-0">
+				<span><a class="btn btn-primary mr-0 d-flex flex-column align-items-center fw-bold" href='/addons/linbmd/linBMD2_install.sh'><font size=+1>Download the linBMD2 Install Script</font></a></span>	
+			</div>
+			
+			<br>
+			<div class="row d-flex justify-content-between pl-0">
+				<span>You can download the linBMD2 install script from the link above.</span>
+			</div>
+			
+			<br>
+			<div class="row d-flex justify-content-between pl-0">
+				<span>Once the download has completed, open a terminal and make the script executable,</span>
+			</div>
+			<div class="row d-flex justify-content-between pl-0 fst-italic">
+				<span>chmod 0777 /path/to/download/linBMD2_install.sh</span>
+			</div>
+			
+			<br>
+			<div class="row d-flex justify-content-between pl-0">
+				<span>Still in the terminal, run the script as root using either sudo or su,</span>
+			</div>
+			<div class="row d-flex justify-content-between pl-0 fst-italic">
+				<span>sudo /path/to/download/linBMD2_install.sh</span>
+			</div>
+			<div class="row d-flex justify-content-between pl-0">
+				<span>Then follow the on-screen prompts.</span>
+			</div>
+			
+			<br>
+			<div class="row d-flex justify-content-between alert alert-info fw-bold" role="alert">
+				<em class="col-10">For install help, corrections, suggestions, please email us at linBMD2@mailo.com</em>
+				<em class="col-2">&copy; FreeBMD</em>
+			</div>
+		</div>
+	</body>
+</html>
