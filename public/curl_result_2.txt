@@ -1,0 +1,341 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	 "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>FreeBMD Syndicate Yorkshire Volunteers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+<!-- 
+
+.mobile{display:none}
+@media screen and (max-width: 550px) {
+.desktop {display:none}
+.mobile {display:table-row}
+}
+@media screen and not (max-width: 550px) {
+.desktop {display:table-row}
+.mobile {display:none}
+}
+ -->
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+<script src="//m2d.m2.ai/pghb.freebmd.org.uk.js" async  type="text/javascript"></script>
+<script src="//cdn.insurads.com/bootstrap/OFZGGRW5.js" async  type="text/javascript"></script>
+</head>
+<body background="/emb3.jpg">
+<H1><a href="/"><img style="border:0" src="/Stamp.gif" height="128" width="216" align="middle" alt="FreeBMD" title="FreeBMD Home Page" class="desktop"><img src="/Stamp-small.gif" height=64 width=108 alt="FreeBMD" class="mobile"></a> Information for Syndicate <FONT COLOR="#C00000">Yorkshire Volunteers</FONT></H1>
+<h2 align="center">Contact: </h2><h3 align="center"><a href="mailto:yorkshire.volunteers@yahoo.co.uk">mailto:yorkshire.volunteers@yahoo.co.uk</a></h3><br><H2 ALIGN=CENTER>Syndicate Members</H2>
+<BR><TABLE ALIGN=CENTER CELLSPACING=2 BORDER=2>
+<CAPTION ALIGN=TOP>Co-ordinators</CAPTION>
+<tr><td>David Hunter</td> <td>yorkshire.volunteers@yahoo.co.uk</td> <td>cokesidedoors</td></tr>
+</TABLE>
+<BR><TABLE ALIGN=CENTER CELLSPACING=2 BORDER=2><CAPTION ALIGN=TOP>Members</CAPTION><TR><TD>Des Adams</TD><TD>desy99</TD></TR>
+<TR><TD>Anonymous</TD><TD>becci1978</TD></TR>
+<TR><TD>Roy Allen</TD><TD>royboy</TD></TR>
+<TR><TD>Anonymous</TD><TD>ken247</TD></TR>
+<TR><TD>Anonymous</TD><TD>TA3</TD></TR>
+<TR><TD>Anonymous</TD><TD>japple</TD></TR>
+<TR><TD>Geoff Ashburner</TD><TD>geoffash</TD></TR>
+<TR><TD>Steve Backhouse</TD><TD>StevieB</TD></TR>
+<TR><TD>Jean Bannister</TD><TD>JeanieB</TD></TR>
+<TR><TD>Anonymous</TD><TD>Billboscribe</TD></TR>
+<TR><TD>Dianne Barskey</TD><TD>dbarskey06</TD></TR>
+<TR><TD>Jennifer Basden</TD><TD>jbaz</TD></TR>
+<TR><TD>Anna Batt</TD><TD>battgirl</TD></TR>
+<TR><TD>Anonymous</TD><TD>dfboey</TD></TR>
+<TR><TD>Sally Bell</TD><TD>SallyG</TD></TR>
+<TR><TD>Anonymous</TD><TD>BELLWAY</TD></TR>
+<TR><TD>Anonymous</TD><TD>mikeb</TD></TR>
+<TR><TD>Ronald Birchall (Deceased - RIP)</TD><TD>Ron_Birchall</TD></TR>
+<TR><TD>Darron Blackbourn</TD><TD>bigsheff1</TD></TR>
+<TR><TD>Anonymous</TD><TD>Jimmy</TD></TR>
+<TR><TD>Anonymous</TD><TD>DCMB</TD></TR>
+<TR><TD>Anonymous</TD><TD>GAB</TD></TR>
+<TR><TD>malcolm bowyer</TD><TD>malcbg</TD></TR>
+<TR><TD>Anonymous</TD><TD>Char</TD></TR>
+<TR><TD>JAMES BRIAN</TD><TD>JIMBRIAN</TD></TR>
+<TR><TD>Mary Briggs</TD><TD>Tuffy</TD></TR>
+<TR><TD>Anonymous</TD><TD>bri47</TD></TR>
+<TR><TD>Helen Faye Brown</TD><TD>Helen293</TD></TR>
+<TR><TD>Anonymous</TD><TD>rwb</TD></TR>
+<TR><TD>Howard Buckler</TD><TD>hfb46</TD></TR>
+<TR><TD>Marian Bullock</TD><TD>mazza52</TD></TR>
+<TR><TD>Anonymous</TD><TD>Bextra1610</TD></TR>
+<TR><TD>Sally Burn</TD><TD>Bluecraftybit</TD></TR>
+<TR><TD>Anonymous</TD><TD>Genie43</TD></TR>
+<TR><TD>Margaret Butcher</TD><TD>Richmond</TD></TR>
+<TR><TD>Anonymous</TD><TD>Frank</TD></TR>
+<TR><TD>Pam Cadman Radford</TD><TD>pamcadman</TD></TR>
+<TR><TD>Anonymous</TD><TD>mauchline</TD></TR>
+<TR><TD>Anonymous</TD><TD>chippy</TD></TR>
+<TR><TD>Anonymous</TD><TD>Shawbrook</TD></TR>
+<TR><TD>Anonymous</TD><TD>sirnigel3</TD></TR>
+<TR><TD>NIGEL CHADWICK</TD><TD>chadders</TD></TR>
+<TR><TD>Anonymous</TD><TD>Sirknight58</TD></TR>
+<TR><TD>Anonymous</TD><TD>judy1625</TD></TR>
+<TR><TD>Anonymous</TD><TD>jellybean</TD></TR>
+<TR><TD>Anonymous</TD><TD>tigerlady63</TD></TR>
+<TR><TD>Anonymous</TD><TD>PennyC</TD></TR>
+<TR><TD>Diana Clarke</TD><TD>Dido</TD></TR>
+<TR><TD>Jayne Coates</TD><TD>Jaynec</TD></TR>
+<TR><TD>Beverley Cohen</TD><TD>BC01</TD></TR>
+<TR><TD>Anonymous</TD><TD>BrownGables</TD></TR>
+<TR><TD>Sarah Compton</TD><TD>ickletigs</TD></TR>
+<TR><TD>Greg Cooke</TD><TD>iamgjc</TD></TR>
+<TR><TD>Dominic Covell</TD><TD>dominiccovel</TD></TR>
+<TR><TD>Anonymous</TD><TD>clared33</TD></TR>
+<TR><TD>Anonymous</TD><TD>Jeandan</TD></TR>
+<TR><TD>Anonymous</TD><TD>brianeverit</TD></TR>
+<TR><TD>Anonymous</TD><TD>daviesmp</TD></TR>
+<TR><TD>Pauline Davies</TD><TD>pollyann</TD></TR>
+<TR><TD>Anonymous</TD><TD>Lepache</TD></TR>
+<TR><TD>Anonymous</TD><TD>Itsme</TD></TR>
+<TR><TD>ANNE DEVERSON</TD><TD>Anne2010</TD></TR>
+<TR><TD>Anonymous</TD><TD>DavDew</TD></TR>
+<TR><TD>Phyllis Din</TD><TD>Pipdin</TD></TR>
+<TR><TD>jeffrey ditchburn</TD><TD>jeff60</TD></TR>
+<TR><TD>Anonymous</TD><TD>gazaa58</TD></TR>
+<TR><TD>Sarah Dommett</TD><TD>SarahDommett</TD></TR>
+<TR><TD>Anne Donnelly</TD><TD>annedonnelly</TD></TR>
+<TR><TD>Anonymous</TD><TD>kitty1812</TD></TR>
+<TR><TD>Anonymous</TD><TD>Palimpsest</TD></TR>
+<TR><TD>Anonymous</TD><TD>helensd67</TD></TR>
+<TR><TD>Bev Dyson</TD><TD>BDy</TD></TR>
+<TR><TD>Joe Easley</TD><TD>joeasley</TD></TR>
+<TR><TD>Faith Eaton</TD><TD>rastajill</TD></TR>
+<TR><TD>Charlotte Eeles</TD><TD>char5005</TD></TR>
+<TR><TD>Anonymous</TD><TD>Salix</TD></TR>
+<TR><TD>Margaret Elam</TD><TD>Margaretelam</TD></TR>
+<TR><TD>Diana Elliott</TD><TD>di35whistles</TD></TR>
+<TR><TD>Karen Ellis</TD><TD>tippi</TD></TR>
+<TR><TD>Frances Ensikat</TD><TD>Ozzie</TD></TR>
+<TR><TD>Anonymous</TD><TD>momo22</TD></TR>
+<TR><TD>Anonymous</TD><TD>blackwidow</TD></TR>
+<TR><TD>natalie  fawcett</TD><TD>natalief</TD></TR>
+<TR><TD>Emma Fell</TD><TD>emma78</TD></TR>
+<TR><TD>Geraldine Fisher</TD><TD>Gezza</TD></TR>
+<TR><TD>Anonymous</TD><TD>riverdeben</TD></TR>
+<TR><TD>John Mark Fitzpatrick</TD><TD>fitzpatrick01</TD></TR>
+<TR><TD>Anonymous</TD><TD>Shuttleworth</TD></TR>
+<TR><TD>Anonymous</TD><TD>Kirsty_84</TD></TR>
+<TR><TD>Anonymous</TD><TD>Potter</TD></TR>
+<TR><TD>Anonymous</TD><TD>DeeDee44</TD></TR>
+<TR><TD>Anonymous</TD><TD>grace</TD></TR>
+<TR><TD>Anonymous</TD><TD>Fozzie</TD></TR>
+<TR><TD>Anonymous</TD><TD>Furr</TD></TR>
+<TR><TD>Ray Garrens</TD><TD>Ray651</TD></TR>
+<TR><TD>Joanne Geldart</TD><TD>JoGeldart</TD></TR>
+<TR><TD>Anonymous</TD><TD>lindagill</TD></TR>
+<TR><TD>Angela Gilroy</TD><TD>Aengifu</TD></TR>
+<TR><TD>Paula Glen</TD><TD>pg1010</TD></TR>
+<TR><TD>Anonymous</TD><TD>lorac147</TD></TR>
+<TR><TD>Anonymous</TD><TD>jessg</TD></TR>
+<TR><TD>Anonymous</TD><TD>Olivia</TD></TR>
+<TR><TD>simon gould</TD><TD>sgld7</TD></TR>
+<TR><TD>Julie Graham</TD><TD>Julies</TD></TR>
+<TR><TD>Anonymous</TD><TD>bobbledon</TD></TR>
+<TR><TD>Granville Gregg</TD><TD>ggregg</TD></TR>
+<TR><TD>jeanette guy</TD><TD>zannetta</TD></TR>
+<TR><TD>Anonymous</TD><TD>KingTut</TD></TR>
+<TR><TD>Anonymous</TD><TD>veritymh</TD></TR>
+<TR><TD>Anonymous</TD><TD>minnie</TD></TR>
+<TR><TD>Anonymous</TD><TD>GH1956</TD></TR>
+<TR><TD>Mandy Harper</TD><TD>MandyHarper</TD></TR>
+<TR><TD>Anonymous</TD><TD>woojharry</TD></TR>
+<TR><TD>Eleanor Harris</TD><TD>Eleanor41</TD></TR>
+<TR><TD>Anonymous</TD><TD>allanh53</TD></TR>
+<TR><TD>Sarah Hatton</TD><TD>saratoga254</TD></TR>
+<TR><TD>Barbara  Hawe</TD><TD>beemhawe</TD></TR>
+<TR><TD>Anonymous</TD><TD>Sub1965</TD></TR>
+<TR><TD>Anne Louise Hawkins</TD><TD>Annelouhawki</TD></TR>
+<TR><TD>Ann Hawksley</TD><TD>AnnieHawk</TD></TR>
+<TR><TD>Anonymous</TD><TD>LynH</TD></TR>
+<TR><TD>Dave Headey</TD><TD>dheadey</TD></TR>
+<TR><TD>Anonymous</TD><TD>YMH</TD></TR>
+<TR><TD>Peter Charles Hicks</TD><TD>Pete-Hicks</TD></TR>
+<TR><TD>Anonymous</TD><TD>alisonjane20</TD></TR>
+<TR><TD>Alan Hill</TD><TD>jaglin</TD></TR>
+<TR><TD>Anonymous</TD><TD>lang_bar</TD></TR>
+<TR><TD>Anonymous</TD><TD>steve1803</TD></TR>
+<TR><TD>Anonymous</TD><TD>pdph</TD></TR>
+<TR><TD>Anonymous</TD><TD>LNWCIU</TD></TR>
+<TR><TD>Brian Holden</TD><TD>brihold</TD></TR>
+<TR><TD>Anonymous</TD><TD>sherlock07</TD></TR>
+<TR><TD>Anonymous</TD><TD>HDSTL</TD></TR>
+<TR><TD>Anonymous</TD><TD>doglover</TD></TR>
+<TR><TD>Stephen Horner</TD><TD>steveH</TD></TR>
+<TR><TD>george howard</TD><TD>howard21</TD></TR>
+<TR><TD>Suzanne Howarth</TD><TD>soooz1</TD></TR>
+<TR><TD>Patrick Howlett</TD><TD>Path22</TD></TR>
+<TR><TD>Barbara Hulme</TD><TD>BHulme</TD></TR>
+<TR><TD>Anonymous</TD><TD>phoenix13385</TD></TR>
+<TR><TD>Joy Ireland</TD><TD>joy_ireland</TD></TR>
+<TR><TD>Anonymous</TD><TD>heirving</TD></TR>
+<TR><TD>Anonymous</TD><TD>Gillian</TD></TR>
+<TR><TD>Diane Jones</TD><TD>emdejon</TD></TR>
+<TR><TD>Anonymous</TD><TD>Brymbo</TD></TR>
+<TR><TD>Blair Jones</TD><TD>dampsquib</TD></TR>
+<TR><TD>Anonymous</TD><TD>CiderMonster</TD></TR>
+<TR><TD>Anonymous</TD><TD>Archdeacon</TD></TR>
+<TR><TD>Mo Kelly</TD><TD>MoKelly</TD></TR>
+<TR><TD>Paul David Kendall</TD><TD>grumpyoldman</TD></TR>
+<TR><TD>Clive Kent</TD><TD>clivey125</TD></TR>
+<TR><TD>Anonymous</TD><TD>pkett</TD></TR>
+<TR><TD>Sharon Kiff</TD><TD>shazwitch</TD></TR>
+<TR><TD>Anonymous</TD><TD>JPK</TD></TR>
+<TR><TD>Anonymous</TD><TD>WelshWren</TD></TR>
+<TR><TD>Alan Lancaster</TD><TD>lancaster100</TD></TR>
+<TR><TD>Trevor Langridge</TD><TD>TrevorL</TD></TR>
+<TR><TD>Anonymous</TD><TD>MelthamRed</TD></TR>
+<TR><TD>Nichola Lawrence</TD><TD>NJL</TD></TR>
+<TR><TD>Kathryn Leaver</TD><TD>NanaKaf</TD></TR>
+<TR><TD>Anonymous</TD><TD>Hevsi</TD></TR>
+<TR><TD>Anonymous</TD><TD>kimbole</TD></TR>
+<TR><TD>Anonymous</TD><TD>DallasL</TD></TR>
+<TR><TD>robert michael longridge</TD><TD>rmbl</TD></TR>
+<TR><TD>Anonymous</TD><TD>steph</TD></TR>
+<TR><TD>Jean Lowe</TD><TD>jlo13</TD></TR>
+<TR><TD>Anonymous</TD><TD>Yorkshire-Lad</TD></TR>
+<TR><TD>Anonymous</TD><TD>Shiny</TD></TR>
+<TR><TD>Pete Lyden</TD><TD>PeteL900</TD></TR>
+<TR><TD>Anonymous</TD><TD>Moosemac</TD></TR>
+<TR><TD>Anonymous</TD><TD>Gertie</TD></TR>
+<TR><TD>Maria Mardon</TD><TD>mariamardon</TD></TR>
+<TR><TD>Jim Marsh</TD><TD>boyjim999</TD></TR>
+<TR><TD>Anonymous</TD><TD>donna</TD></TR>
+<TR><TD>Tony Marshall</TD><TD>Skyliner</TD></TR>
+<TR><TD>ROBERT MARSTON</TD><TD>Rob165</TD></TR>
+<TR><TD>jackie mason</TD><TD>jackie5</TD></TR>
+<TR><TD>norma maxwell</TD><TD>coop01</TD></TR>
+<TR><TD>Hazel Catherine McCann</TD><TD>kylum</TD></TR>
+<TR><TD>Anonymous</TD><TD>bridget333</TD></TR>
+<TR><TD>Anonymous</TD><TD>mcwmcg</TD></TR>
+<TR><TD>Anonymous</TD><TD>dfm1973</TD></TR>
+<TR><TD>Wendy Millard</TD><TD>bc-alih</TD></TR>
+<TR><TD>Pauline Brenda Mitchell</TD><TD>tykess</TD></TR>
+<TR><TD>Stephen Moody</TD><TD>Shmoo</TD></TR>
+<TR><TD>Anonymous</TD><TD>donna1979</TD></TR>
+<TR><TD>terri morgan</TD><TD>tadc4</TD></TR>
+<TR><TD>Julie Morris</TD><TD>blueangel</TD></TR>
+<TR><TD>Anonymous</TD><TD>BarbaraMosley</TD></TR>
+<TR><TD>Anonymous</TD><TD>BrianMuck</TD></TR>
+<TR><TD>Sue Nashe</TD><TD>sj49gn</TD></TR>
+<TR><TD>Anonymous</TD><TD>suen13</TD></TR>
+<TR><TD>Mary Jane Elizabeth  Nelson</TD><TD>mary48</TD></TR>
+<TR><TD>Carey Newbould</TD><TD>poppy123uk</TD></TR>
+<TR><TD>Anonymous</TD><TD>tugby7</TD></TR>
+<TR><TD>Anonymous</TD><TD>skinnyminnie</TD></TR>
+<TR><TD>Jayne Nugent</TD><TD>JayneLN</TD></TR>
+<TR><TD>Ted O Rourke</TD><TD>tedorourke</TD></TR>
+<TR><TD>Anonymous</TD><TD>lo1946</TD></TR>
+<TR><TD>Anonymous</TD><TD>JO855</TD></TR>
+<TR><TD>Linda Ovington</TD><TD>lovington</TD></TR>
+<TR><TD>Jan Page</TD><TD>janrickpage</TD></TR>
+<TR><TD>Anonymous</TD><TD>bev256g</TD></TR>
+<TR><TD>Guinevere Palmer</TD><TD>pinkybutter</TD></TR>
+<TR><TD>Mike Parker</TD><TD>XEROID</TD></TR>
+<TR><TD>Joseph Kenneth Parkin</TD><TD>joepsheff</TD></TR>
+<TR><TD>Andrew Pattison</TD><TD>ak83</TD></TR>
+<TR><TD>John Porter</TD><TD>g3yzr</TD></TR>
+<TR><TD>Anonymous</TD><TD>gremlin</TD></TR>
+<TR><TD>Anonymous</TD><TD>merryj</TD></TR>
+<TR><TD>Anonymous</TD><TD>NANCYRAYNER</TD></TR>
+<TR><TD>Anonymous</TD><TD>hellsbells</TD></TR>
+<TR><TD>Anonymous</TD><TD>Sabriyyah</TD></TR>
+<TR><TD>Anonymous</TD><TD>Dennis238</TD></TR>
+<TR><TD>Anonymous</TD><TD>ascotinyorks</TD></TR>
+<TR><TD>Ian Robertson</TD><TD>ianguardian</TD></TR>
+<TR><TD>Vikki Robinson</TD><TD>VRobbo</TD></TR>
+<TR><TD>Lisa Robinson</TD><TD>LisaR1987</TD></TR>
+<TR><TD>sandra rodgers</TD><TD>sandy175</TD></TR>
+<TR><TD>Anne Rodway</TD><TD>daffodil1267</TD></TR>
+<TR><TD>Eileen Russell</TD><TD>h28skipper</TD></TR>
+<TR><TD>Anonymous</TD><TD>Lesley-S</TD></TR>
+<TR><TD>Anna Sandfield</TD><TD>taichianna</TD></TR>
+<TR><TD>Amy Savage</TD><TD>AmySav</TD></TR>
+<TR><TD>Lynda Schulman</TD><TD>Kiwibird</TD></TR>
+<TR><TD>Anonymous</TD><TD>Beany</TD></TR>
+<TR><TD>Anonymous</TD><TD>bashearer</TD></TR>
+<TR><TD>Miranda Shell</TD><TD>mirandashell</TD></TR>
+<TR><TD>Jacqueline Sheriden</TD><TD>winterchicken</TD></TR>
+<TR><TD>Amanda Shotts</TD><TD>mandinfrance</TD></TR>
+<TR><TD>Anonymous</TD><TD>Eponymh</TD></TR>
+<TR><TD>Gordon Smith</TD><TD>Sandon</TD></TR>
+<TR><TD>elizabeth Smith</TD><TD>elizgir</TD></TR>
+<TR><TD>Anonymous</TD><TD>BetweentheLines</TD></TR>
+<TR><TD>Ralph Eric Snape</TD><TD>RES</TD></TR>
+<TR><TD>Michelle Sparrow</TD><TD>michelleesparrow</TD></TR>
+<TR><TD>Sharon Spelt</TD><TD>sspelt</TD></TR>
+<TR><TD>Anonymous</TD><TD>harry321</TD></TR>
+<TR><TD>carole staward</TD><TD>lucky1999</TD></TR>
+<TR><TD>Samantha Stead</TD><TD>yosammity</TD></TR>
+<TR><TD>pat stearman</TD><TD>tamar</TD></TR>
+<TR><TD>Sue Steptoe</TD><TD>SueSt</TD></TR>
+<TR><TD>Anonymous</TD><TD>Boycie</TD></TR>
+<TR><TD>Mark Taylor</TD><TD>Macamah</TD></TR>
+<TR><TD>Anonymous</TD><TD>phoenix</TD></TR>
+<TR><TD>Janet Terry</TD><TD>harpic</TD></TR>
+<TR><TD>Andrew Thomas</TD><TD>AndyThomas2662</TD></TR>
+<TR><TD>Anonymous</TD><TD>WelshWitch</TD></TR>
+<TR><TD>Anonymous</TD><TD>stoke</TD></TR>
+<TR><TD>Mike Thompson</TD><TD>hammers</TD></TR>
+<TR><TD>Brian Thompson</TD><TD>Tommo</TD></TR>
+<TR><TD>Anonymous</TD><TD>N1col4</TD></TR>
+<TR><TD>richard titmuss</TD><TD>madgic</TD></TR>
+<TR><TD>Anonymous</TD><TD>shazza66</TD></TR>
+<TR><TD>Anonymous</TD><TD>Scholesy</TD></TR>
+<TR><TD>Pamela  vardy</TD><TD>3Thyme</TD></TR>
+<TR><TD>Freddie Watson</TD><TD>DocDoc</TD></TR>
+<TR><TD>Victor Charles Wedge</TD><TD>Vickles</TD></TR>
+<TR><TD>Anonymous</TD><TD>ramekin101</TD></TR>
+<TR><TD>Margaret Williams</TD><TD>muse128</TD></TR>
+<TR><TD>Janice Wilson</TD><TD>Rainbow</TD></TR>
+<TR><TD>Anonymous</TD><TD>inverz</TD></TR>
+<TR><TD>Anonymous</TD><TD>traceyw</TD></TR>
+<TR><TD>marion withers</TD><TD>mau47</TD></TR>
+<TR><TD>Victoria Wood</TD><TD>VBWood</TD></TR>
+<TR><TD>Terry Woodhouse</TD><TD>tw49</TD></TR>
+<TR><TD>Anonymous</TD><TD>Veronica</TD></TR>
+<TR><TD>Paul Woollins</TD><TD>PAULEYORKS</TD></TR>
+<TR><TD>melissa wright</TD><TD>babynoahsmamma</TD></TR>
+<TR><TD>Anonymous</TD><TD>DaveW</TD></TR>
+<TR><TD>Shelagh Yospur</TD><TD>emilyfrost</TD></TR>
+<TR><TD>Anonymous</TD><TD>Melvin</TD></TR>
+</TABLE>
+<P ALIGN=CENTER>red = registration incomplete<HR ALIGN=CENTER><H2 ALIGN=CENTER>Range Statistics</H2>
+<TABLE ALIGN=CENTER><TR><TD ALIGN=CENTER>The counts and range definitions reported below correspond to <BR>the data as at 2020-09-22 10:26:12 when the database was updated.<BR>The <B>Total records uploaded</B> column below refers to the total number<BR>of records uploaded by both Syndicate and non Syndicate volunteers.</TD></TR></TABLE><BR>
+
+<TABLE ALIGN=CENTER CELLSPACING=2 BORDER=2 CELLPADDING=2><COLGROUP ALIGN=CENTER SPAN=6></COLGROUP><tr><th>Type</th> <th>Quarter</th> <th>Year</th> <th>Sub-range</th> <th>Records uploaded by Synd</th> <th>Total records uploaded</th></tr><tr><td>Births</td> <td>Sep</td> <td>1853</td> <td>All</td> <td>148258</td> <td>324143</td></tr><tr><td>Births</td> <td>Mar</td> <td>1862</td> <td>All</td> <td>183302</td> <td>387604</td></tr><tr><td>Births</td> <td>Jun</td> <td>1862</td> <td>All</td> <td>190010</td> <td>385652</td></tr><tr><td>Births</td> <td>Sep</td> <td>1862</td> <td>All</td> <td>176289</td> <td>355111</td></tr><tr><td>Births</td> <td>Dec</td> <td>1862</td> <td>All</td> <td>173721</td> <td>350167</td></tr><tr><td>Births</td> <td>Jun</td> <td>1864</td> <td>All</td> <td>190540</td> <td>384025</td></tr><tr><td>Births</td> <td>Mar</td> <td>1900</td> <td>All</td> <td>247136</td> <td>486028</td></tr><tr><td>Births</td> <td>Sep</td> <td>1900</td> <td>All</td> <td>236257</td> <td>471000</td></tr><tr><td>Births</td> <td>Dec</td> <td>1900</td> <td>All</td> <td>226319</td> <td>443810</td></tr><tr><td>Births</td> <td>Mar</td> <td>1951</td> <td>All</td> <td>185437</td> <td>186885</td></tr><tr><td>Births</td> <td>Jun</td> <td>1951</td> <td>All</td> <td>190062</td> <td>191730</td></tr><tr><td>Births</td> <td>Sep</td> <td>1951</td> <td>All</td> <td>175281</td> <td>176667</td></tr><tr><td>Births</td> <td>Dec</td> <td>1951</td> <td>All</td> <td>160938</td> <td>161971</td></tr><tr><td>Births</td> <td>Mar</td> <td>1961</td> <td>All</td> <td>215797</td> <td>218920</td></tr><tr><td>Births</td> <td>Jun</td> <td>1961</td> <td>All</td> <td>219927</td> <td>222831</td></tr><tr><td>Births</td> <td>Sep</td> <td>1961</td> <td>All</td> <td>217064</td> <td>219378</td></tr><tr><td>Births</td> <td>Dec</td> <td>1961</td> <td>All</td> <td>200279</td> <td>202035</td></tr><tr><td>Births</td> <td>Dec</td> <td>1974</td> <td>All</td> <td>166647</td> <td>169591</td></tr><tr><td>Births</td> <td>Mar</td> <td>1978</td> <td>All</td> <td>163936</td> <td>166438</td></tr><tr><td>Births</td> <td>Mar</td> <td>1985</td> <td>All</td> <td>762141</td> <td>766663</td></tr><tr><td>Marriages</td> <td>Mar</td> <td>1838</td> <td>All</td> <td>47154</td> <td>94982</td></tr><tr><td>Marriages</td> <td>Jun</td> <td>1838</td> <td>All</td> <td>61588</td> <td>131099</td></tr><tr><td>Marriages</td> <td>Sep</td> <td>1838</td> <td>All</td> <td>56365</td> <td>117142</td></tr><tr><td>Marriages</td> <td>Dec</td> <td>1838</td> <td>All</td> <td>75451</td> <td>154071</td></tr><tr><td>Marriages</td> <td>Mar</td> <td>1841</td> <td>All</td> <td>49588</td> <td>104407</td></tr><tr><td>Marriages</td> <td>Jun</td> <td>1841</td> <td>All</td> <td>65627</td> <td>134070</td></tr><tr><td>Marriages</td> <td>Sep</td> <td>1841</td> <td>All</td> <td>61280</td> <td>123926</td></tr><tr><td>Marriages</td> <td>Dec</td> <td>1841</td> <td>All</td> <td>73530</td> <td>152719</td></tr><tr><td>Marriages</td> <td>Mar</td> <td>1842</td> <td>All</td> <td>52172</td> <td>108915</td></tr><tr><td>Marriages</td> <td>Jun</td> <td>1842</td> <td>All</td> <td>62991</td> <td>131750</td></tr><tr><td>Marriages</td> <td>Sep</td> <td>1842</td> <td>All</td> <td>55384</td> <td>116614</td></tr><tr><td>Marriages</td> <td>Dec</td> <td>1842</td> <td>All</td> <td>72480</td> <td>150602</td></tr><tr><td>Marriages</td> <td>Jun</td> <td>1866</td> <td>All</td> <td>102436</td> <td>210411</td></tr><tr><td>Marriages</td> <td>Sep</td> <td>1866</td> <td>All</td> <td>94111</td> <td>191280</td></tr><tr><td>Marriages</td> <td>Mar</td> <td>1946</td> <td>All</td> <td>165285</td> <td>165716</td></tr><tr><td>Marriages</td> <td>Jun</td> <td>1946</td> <td>All</td> <td>211435</td> <td>212010</td></tr><tr><td>Marriages</td> <td>Sep</td> <td>1946</td> <td>All</td> <td>232217</td> <td>232889</td></tr><tr><td>Marriages</td> <td>Dec</td> <td>1946</td> <td>All</td> <td>207345</td> <td>207919</td></tr><tr><td>Marriages</td> <td>Mar</td> <td>1957</td> <td>All</td> <td>226409</td> <td>226876</td></tr><tr><td>Marriages</td> <td>Jun</td> <td>1957</td> <td>All</td> <td>135323</td> <td>135597</td></tr><tr><td>Marriages</td> <td>Sep</td> <td>1957</td> <td>All</td> <td>213661</td> <td>214095</td></tr><tr><td>Marriages</td> <td>Dec</td> <td>1957</td> <td>All</td> <td>138741</td> <td>139025</td></tr><tr><td>Marriages</td> <td>Jun</td> <td>1964</td> <td>All</td> <td>145913</td> <td>146254</td></tr><tr><td>Marriages</td> <td>Sep</td> <td>1964</td> <td>All</td> <td>234590</td> <td>234984</td></tr><tr><td>Marriages</td> <td>Dec</td> <td>1964</td> <td>All</td> <td>173593</td> <td>173885</td></tr><tr><td>Marriages</td> <td>Mar</td> <td>1976</td> <td>All</td> <td>160150</td> <td>160364</td></tr><tr><td>Marriages</td> <td>Mar</td> <td>1980</td> <td>All</td> <td>147997</td> <td>148173</td></tr><tr><td>Marriages</td> <td>Jun</td> <td>1980</td> <td>All</td> <td>217795</td> <td>218531</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1841</td> <td>All</td> <td>99377</td> <td>199903</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1842</td> <td>All</td> <td>96437</td> <td>198640</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1842</td> <td>All</td> <td>86948</td> <td>175232</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1842</td> <td>All</td> <td>82588</td> <td>176248</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1842</td> <td>All</td> <td>92168</td> <td>172652</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1843</td> <td>All</td> <td>95550</td> <td>193149</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1843</td> <td>All</td> <td>87871</td> <td>177693</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1843</td> <td>All</td> <td>77645</td> <td>156009</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1843</td> <td>All</td> <td>88009</td> <td>178295</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1844</td> <td>All</td> <td>101978</td> <td>210853</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1844</td> <td>All</td> <td>86107</td> <td>174748</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1844</td> <td>All</td> <td>80113</td> <td>166412</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1844</td> <td>All</td> <td>91504</td> <td>187984</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1846</td> <td>All</td> <td>90686</td> <td>182043</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1846</td> <td>All</td> <td>102087</td> <td>205207</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1846</td> <td>All</td> <td>32918</td> <td>143075</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1847</td> <td>All</td> <td>120591</td> <td>240310</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1847</td> <td>All</td> <td>107685</td> <td>215736</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1847</td> <td>All</td> <td>93824</td> <td>188621</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1847</td> <td>All</td> <td>104036</td> <td>212207</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1848</td> <td>All</td> <td>120842</td> <td>242379</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1848</td> <td>All</td> <td>99911</td> <td>200675</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1848</td> <td>All</td> <td>88569</td> <td>177827</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1848</td> <td>All</td> <td>92657</td> <td>186710</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1850</td> <td>All</td> <td>98715</td> <td>198982</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1850</td> <td>All</td> <td>93269</td> <td>190790</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1850</td> <td>All</td> <td>124495</td> <td>173817</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1850</td> <td>All</td> <td>92054</td> <td>239686</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1942</td> <td>All</td> <td>153168</td> <td>154028</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1942</td> <td>All</td> <td>118980</td> <td>119388</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1942</td> <td>All</td> <td>99074</td> <td>99548</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1942</td> <td>All</td> <td>115862</td> <td>116424</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1952</td> <td>All</td> <td>150023</td> <td>150628</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1952</td> <td>All</td> <td>117022</td> <td>117395</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1952</td> <td>All</td> <td>100024</td> <td>100327</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1952</td> <td>All</td> <td>138433</td> <td>139145</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1959</td> <td>All</td> <td>179363</td> <td>179967</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1959</td> <td>All</td> <td>122323</td> <td>122737</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1959</td> <td>All</td> <td>104785</td> <td>105107</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1959</td> <td>All</td> <td>129437</td> <td>129846</td></tr><tr><td>Deaths</td> <td>Mar</td> <td>1961</td> <td>All</td> <td>179827</td> <td>180407</td></tr><tr><td>Deaths</td> <td>Jun</td> <td>1961</td> <td>All</td> <td>126875</td> <td>127234</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1961</td> <td>All</td> <td>112113</td> <td>112424</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1961</td> <td>All</td> <td>141721</td> <td>142133</td></tr><tr><td>Deaths</td> <td>Sep</td> <td>1971</td> <td>All</td> <td>127599</td> <td>127824</td></tr><tr><td>Deaths</td> <td>Dec</td> <td>1971</td> <td>All</td> <td>147793</td> <td>148082</td></tr><TR><TD colspan=4>TOTAL<TD>12963008<TD>18547482</TABLE><p><a href="/">FreeBMD Main Page</a></P><HR><table border=0 cellspacing=0 width="100%">
+<tr><td valign=top><font size=-1>Search engine, layout and database
+Copyright &copy; 1998-2018 Free UK Genealogy CIO, a charity registered in England and Wales, Number 1167484.
+<br>We make no warranty whatsoever as to the accuracy or
+completeness of the FreeBMD data.
+<br>Use of the FreeBMD website is conditional upon acceptance of the <a href="/terms.html">Terms and Conditions</a><script type="text/javascript">
+var _gaq = _gaq || [];
+window.update_analytics_cookie = function (preference) {
+	if(preference == 'deny') {
+		window['ga-disable-UA-12771400-1'] = true;
+		delete_cookie('__utma');
+          	delete_cookie('__utmt');
+          	delete_cookie('__utmb');
+          	delete_cookie('__utmc');
+          	delete_cookie('__utmz');
+          	delete_cookie('__utmv');
+	} else if(preference == 'accept') {
+		_gaq.push(['_setAccount', 'UA-12771400-1']);
+		_gaq.push(['_trackPageview']);
+	};
+};
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script><br><div class="cookieConsent">
+    <div id="cookieText" >
+      We use cookies to ensure you get the best experience with our website. This includes carefully chosen third-party cookies for analysing traffic and advertising. Please select <strong>Accept</strong> if you consent and wish to continue using the site. <strong><a tabindex = "1" href="/CookiePolicy.html" class="cookie_policy_link" id="cookie_policy">More options and information.</a></strong>
+    </div>
+    <div class = "cookieAcceptButton">
+      <input class="accept_cookies" tabindex="3" type="submit" name="accept_cookies" id="accept_cookies" value="Accept" />
+    </div>
+  </div><br><link type="text/css" rel="stylesheet" href="/style/cookie_control.css"><br><script type="text/javascript" src="/js/cookie_control.js?1.40"></script><br><script type="text/javascript" src="/js/advert_control.js?1.2"></script></font></td>
+<td><a href='/cgi/Explore.pl'><img src='/ExploreBackground.png' alt='Explore FreeBMD' style='border:0'></a></td></tr></table><script type="text/javascript" src="/js/cookie_control.js?1.40"></script>

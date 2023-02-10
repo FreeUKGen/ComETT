@@ -1,0 +1,12 @@
+<fileupload result=failed
+reason=malformedrequest>
+<errors>
+Content missing (from file /srv/freecomett/public/curl_result.txt)
+</errors>
+<uploadlink>
+https://test1.freebmd.org.uk/cgi/bmd-files.pl
+</uploadlink>
+<information>
+
+</information>
+</fileupload>

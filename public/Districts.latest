@@ -1,0 +1,70 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	 "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>BMD Login</title>
+<meta name="member" content="vervet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+ul{margin-top:0.2em}
+</style>
+<style type="text/css">
+<!-- 
+
+.mobile{display:none}
+@media screen and (max-width: 550px) {
+.desktop {display:none}
+.mobile {display:table-row}
+}
+@media screen and not (max-width: 550px) {
+.desktop {display:table-row}
+.mobile {display:none}
+}
+ -->
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+<script src="/js/cookie_control.js?1.43" type="text/javascript"></script>
+<script src="/js/advert_control.js?1.4" type="text/javascript"></script>
+<script src="/js/gtag_script.js?1.2" type="text/javascript"></script>
+</head>
+<body background="../emb3.jpg">
+<h1><a href="/"><img style="border:0" src="/Stamp.gif" height="128" width="216" align="middle" alt="FreeBMD" title="FreeBMD Home Page" class="desktop"><img src="/Stamp-small.gif" height=64 width=108 alt="FreeBMD" class="mobile"></a> Login to File Management</h1><script type='text/javascript'>
+<!--
+var capslockreportname;
+function capsDetect( e, report ) {
+    if( !e ) { e = window.event; } if( !e ) { report.innerHTML = ''; return; }
+    //what (case sensitive in good browsers) key was pressed
+    var theKey = e.which ? e.which : ( e.keyCode ? e.keyCode : ( e.charCode ? e.charCode : 0 ) );
+    //was the shift key was pressed
+    var theShift = e.shiftKey || ( e.modifiers && ( e.modifiers & 4 ) ); //bitWise AND
+    //if upper case, check if shift is not pressed. if lower case, check if shift is pressed
+    if ( ( theKey > 64 && theKey < 91 && !theShift ) || ( theKey > 96 && theKey < 123 && theShift ) ){
+        report.innerHTML = "&nbsp;CAPS LOCK is on"; 
+    } else {
+        report.innerHTML = ""; 
+    }
+}
+
+//-->
+</script>
+<P><form method="post" action="https://test1.freebmd.org.uk/cgi/bmd-files.pl" enctype="application/x-www-form-urlencoded" name="loginform"><TABLE><tr><td>User ID</td> <td><input type="text" name="__bmd_1" ></td></tr> <tr><td>Password&nbsp;&nbsp;</td> <td><input type="password" name="__bmd_2"  onblur="capslockreportname.innerHTML=''" onkeypress="capsDetect(arguments[0],capslockreportname);"></td> <td><DIV ID="capslockreport"></DIV></td></tr></TABLE><input type="submit" name="__bmd_0" value="Log In" ><p><input type="hidden" name="__bmd_8" value="FreeBMDauth" >Forgotten your password? Go and <A HREF="https://test1.freebmd.org.uk/cgi/bmd-files.pl?__bmd_7=1" ONCLICK="this.href=this.href+'&__bmd_1='+document.loginform.__bmd_1.value">get a new one</A>.</FORM><script type='text/javascript'>
+<!--
+document.forms['loginform'].elements['__bmd_1'].focus();capslockreportname = document.getElementById('capslockreport');
+//-->
+</script>
+<p><a href="/">FreeBMD Main Page</a></P><HR><table border=0 cellspacing=0 width="100%">
+<tr><td valign=top><font size=-1>Search engine, layout and database
+Copyright &copy; 1998-2022 Free UK Genealogy CIO, a charity registered in England and Wales, Number 1167484.
+<br>We make no warranty whatsoever as to the accuracy or
+completeness of the FreeBMD data.
+<br>Use of the FreeBMD website is conditional upon acceptance of the <a href="/terms.html">Terms and Conditions</a><br><div class="cookieConsent">
+    <div id="cookieText" >
+      We use cookies to ensure you get the best experience with our website. This includes carefully chosen third-party cookies for analysing traffic and advertising. Please select <strong>Accept</strong> if you consent and wish to continue using the site. <strong><a tabindex = "1" href="/CookiePolicy.html" class="cookie_policy_link" id="cookie_policy">More options and information.</a></strong>
+    </div>
+    <div class = "cookieAcceptButton">
+      <input class="accept_cookies" tabindex="3" type="submit" name="accept_cookies" id="accept_cookies" value="Accept" />
+    </div>
+  </div><br><link type="text/css" rel="stylesheet" href="/style/cookie_control.css"></font></td>
+<td><a href='/cgi/Explore.pl'><img src='/ExploreBackground.png' alt='Explore FreeBMD' style='border:0'></a></td></tr></table><script type="text/javascript" src="/js/cookie_control.js?1.43"></script>
+
+</body>
+</html>
