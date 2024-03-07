@@ -1,0 +1,12 @@
+CRITICAL - 2024-03-03 20:11:30 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Views/templates/header.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/View/View.php(210): include('...')
+#2 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /data/www/freecomett/app/Helpers/transcribe_helper.php(508): view()
+#5 /data/www/freecomett/app/Controllers/Transcribe.php(1109): App\Controllers\transcribe_show_step1()
+#6 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Transcribe->verify_onthefly()
+#7 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}

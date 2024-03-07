@@ -1,0 +1,39 @@
+CRITICAL - 2024-02-27 07:03:59 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Views/templates/header.php(193): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/View/View.php(210): include('...')
+#2 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /data/www/freecomett/app/Controllers/Identity.php(696): view()
+#5 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Identity->signin_select_syndicate()
+#6 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-27 07:35:58 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(2218): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Transcribe->get_volume()
+#2 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-02-27 08:33:59 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Controllers/Identity.php(106): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step2()
+#2 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-02-27 12:05:02 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Controllers/Identity.php(708): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Identity->signin_get_syndicate()
+#2 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-02-27 23:50:01 --> foreach() argument must be of type array|object, null given
+#0 /data/www/freecomett/app/Controllers/Report.php(154): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Report->show_report_data()
+#2 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

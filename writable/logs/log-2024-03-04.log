@@ -1,0 +1,110 @@
+CRITICAL - 2024-03-04 01:35:26 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Views/templates/header.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/View/View.php(210): include('...')
+#2 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /data/www/freecomett/app/Controllers/Report.php(86): view()
+#5 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Report->report_step1()
+#6 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-04 15:07:47 --> Class "PHPMailer\PHPMailer\PHPMailer" not found
+#0 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step3()
+#1 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-03-04 15:08:40 --> Cannot use PHPMailer\PHPMailer\PHPMailer as PHPMailer because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-03-04 15:08:46 --> Cannot use PHPMailer\PHPMailer\PHPMailer as PHPMailer because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-03-04 15:08:52 --> Cannot use PHPMailer\PHPMailer\PHPMailer as PHPMailer because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-03-04 15:36:39 --> Unclosed '(' does not match ']'
+#0 /data/www/freecomett/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /data/www/freecomett/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /data/www/freecomett/system/CodeIgniter.php(797): class_exists()
+#4 /data/www/freecomett/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2024-03-04 15:47:06 --> Column 'identity_role' cannot be null
+CRITICAL - 2024-03-04 15:47:06 --> Column 'identity_role' cannot be null
+#0 /data/www/freecomett/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /data/www/freecomett/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /data/www/freecomett/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /data/www/freecomett/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /data/www/freecomett/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /data/www/freecomett/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /data/www/freecomett/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /data/www/freecomett/app/Controllers/Identity.php(306): CodeIgniter\Model->insert()
+#8 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step3()
+#9 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-03-04 15:49:03 --> Column 'identity_role' cannot be null
+CRITICAL - 2024-03-04 15:49:03 --> Column 'identity_role' cannot be null
+#0 /data/www/freecomett/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /data/www/freecomett/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /data/www/freecomett/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /data/www/freecomett/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /data/www/freecomett/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /data/www/freecomett/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /data/www/freecomett/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /data/www/freecomett/app/Controllers/Identity.php(306): CodeIgniter\Model->insert()
+#8 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Identity->signin_step3()
+#9 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-04 16:45:00 --> Undefined array key "actual_y"
+#0 /data/www/freecomett/app/Helpers/transcribe_helper.php(407): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/app/Controllers/Deaths.php(27): App\Controllers\transcribe_initialise_step1()
+#2 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#3 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-03-04 16:50:53 --> Undefined array key "actual_y"
+#0 /data/www/freecomett/app/Helpers/transcribe_helper.php(407): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/app/Controllers/Deaths.php(27): App\Controllers\transcribe_initialise_step1()
+#2 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#3 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-03-04 16:51:15 --> Undefined array key "actual_y"
+#0 /data/www/freecomett/app/Helpers/transcribe_helper.php(407): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/app/Controllers/Births.php(27): App\Controllers\transcribe_initialise_step1()
+#2 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Births->transcribe_births_step1()
+#3 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-03-04 17:30:04 --> Unclosed '{' on line 431 does not match ')'
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-04 20:48:03 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(1149): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Transcribe->verify_back_step1()
+#2 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-04 20:49:09 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(1149): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Transcribe->verify_back_step1()
+#2 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

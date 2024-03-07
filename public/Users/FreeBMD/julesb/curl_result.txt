@@ -1,0 +1,9 @@
+<fileupload result=OK
+>
+<uploadlink>
+https://test1.freebmd.org.uk/cgi/bmd-files.pl
+</uploadlink>
+<information>
+
+</information>
+</fileupload>

@@ -1,0 +1,235 @@
+CRITICAL - 2024-03-01 10:26:35 --> syntax error, unexpected token "echo"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:27:30 --> syntax error, unexpected token "echo"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:28:59 --> syntax error, unexpected token "echo"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:31:54 --> syntax error, unexpected token "echo"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:34:18 --> syntax error, unexpected token ";"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:34:35 --> syntax error, unexpected token ";"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:35:39 --> syntax error, unexpected token ";"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:36:31 --> syntax error, unexpected token ";"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:38:30 --> syntax error, unexpected token "echo"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:38:46 --> syntax error, unexpected token ";"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:39:49 --> syntax error, unexpected token ";"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:43:11 --> syntax error, unexpected token ";"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 10:45:54 --> syntax error, unexpected token "echo"
+#0 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /data/www/freecomett/app/Helpers/transcribe_helper.php(502): view()
+#3 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#4 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#5 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-01 15:32:43 --> syntax error, unexpected variable "$session"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 15:35:37 --> syntax error, unexpected variable "$session"
+#0 /data/www/freecomett/app/Controllers/Deaths.php(19): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Deaths->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 15:44:15 --> syntax error, unexpected variable "$session"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 15:45:48 --> syntax error, unexpected variable "$session"
+#0 /data/www/freecomett/app/Controllers/Deaths.php(19): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Deaths->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 16:00:50 --> syntax error, unexpected variable "$session"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 16:02:09 --> syntax error, unexpected variable "$session"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 16:03:22 --> syntax error, unexpected variable "$session"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 16:19:08 --> syntax error, unexpected variable "$dx"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 16:20:08 --> syntax error, unexpected variable "$session"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 16:20:47 --> syntax error, unexpected variable "$session"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 17:51:38 --> syntax error, unexpected token "<"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 17:52:20 --> syntax error, unexpected token "<"
+#0 /data/www/freecomett/app/Controllers/Transcribe.php(31): helper()
+#1 /data/www/freecomett/system/CodeIgniter.php(809): App\Controllers\Transcribe->__construct()
+#2 /data/www/freecomett/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-01 20:37:45 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Views/templates/header.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/View/View.php(210): include('...')
+#2 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /data/www/freecomett/app/Controllers/Identity.php(698): view()
+#5 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Identity->signin_select_syndicate()
+#6 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-01 20:44:55 --> unlink(/data/www/freecomett/writable/debugbar/debugbar_1709325718.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/Debug/Toolbar/Collectors/History.php(74): unlink()
+#2 /data/www/freecomett/system/Debug/Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+#3 /data/www/freecomett/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format()
+#4 /data/www/freecomett/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 /data/www/freecomett/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 /data/www/freecomett/system/CodeIgniter.php(308): CodeIgniter\Events\Events::trigger()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

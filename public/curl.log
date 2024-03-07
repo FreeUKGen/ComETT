@@ -1,0 +1,123 @@
+* processing: images.freebmd.org.uk/GUS/1995/Deaths/
+*   Trying 5.9.175.2:80...
+* Connected to images.freebmd.org.uk (5.9.175.2) port 80
+> GET /GUS/1995/Deaths/ HTTP/1.1
+Host: images.freebmd.org.uk
+Accept: */*
+
+< HTTP/1.1 301 Moved Permanently
+< content-length: 0
+< location: https://images.freebmd.org.uk/GUS/1995/Deaths/
+< 
+* Connection #0 to host images.freebmd.org.uk left intact
+* processing: images.freebmd.org.uk/GUS/1995/Deaths/
+*   Trying 5.9.175.2:80...
+* Connected to images.freebmd.org.uk (5.9.175.2) port 80
+> GET /GUS/1995/Deaths/ HTTP/1.1
+Host: images.freebmd.org.uk
+Accept: */*
+
+< HTTP/1.1 301 Moved Permanently
+< content-length: 0
+< location: https://images.freebmd.org.uk/GUS/1995/Deaths/
+< 
+* Connection #0 to host images.freebmd.org.uk left intact
+CURL...: http://images.freebmd.org.uk/GUS/1995/Deaths/ Time...: 0.053593 DNS: 0.002496000 Connect: 0.028202 SSL/SSH: 0 PreTransfer: 0.028349 StartTransfer: 0.053515 Download: 0.000078000* processing: https://images.freebmd.org.uk/GUS/1995/Deaths/
+*   Trying 5.9.175.2:443...
+* Connected to images.freebmd.org.uk (5.9.175.2) port 443
+* ALPN: offers http/1.1
+*  CAfile: /usr/local/share/certs/ca-root-nss.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=*.freebmd.org.uk
+*  start date: Sep  1 02:45:37 2023 GMT
+*  expire date: Nov 30 02:45:36 2023 GMT
+*  subjectAltName: host "images.freebmd.org.uk" matched cert's "*.freebmd.org.uk"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* using HTTP/1.1
+> GET /GUS/1995/Deaths/ HTTP/1.1
+Host: images.freebmd.org.uk
+Accept: */*
+
+* old SSL session ID is stale, removing
+< HTTP/1.1 401 Unauthorized
+< date: Tue, 26 Sep 2023 18:22:33 GMT
+< server: Apache/2.4.57 (FreeBSD) Phusion_Passenger/6.0.18 mod_perl/2.0.12 Perl/v5.34.1
+< www-authenticate: Basic realm="Image Scan Access"
+< last-modified: Mon, 03 Apr 2023 15:07:18 GMT
+< etag: "1059-5f86fea35b580"
+< accept-ranges: bytes
+< content-length: 4185
+< content-type: text/html
+< 
+* Connection #0 to host images.freebmd.org.uk left intact
+CURL...: https://images.freebmd.org.uk/GUS/1995/Deaths/ Time...: 0.088218 DNS: 0.001975000 Connect: 0.033611 SSL/SSH: 0.061421 PreTransfer: 0.061479 StartTransfer: 0.08784 Download: 0.000378000* processing: https://images.freebmd.org.uk/GUS/1995/Deaths/
+*   Trying 5.9.175.2:443...
+* Connected to images.freebmd.org.uk (5.9.175.2) port 443
+* ALPN: offers http/1.1
+*  CAfile: /usr/local/share/certs/ca-root-nss.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=*.freebmd.org.uk
+*  start date: Sep  1 02:45:37 2023 GMT
+*  expire date: Nov 30 02:45:36 2023 GMT
+*  subjectAltName: host "images.freebmd.org.uk" matched cert's "*.freebmd.org.uk"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* using HTTP/1.1
+* Server auth using Basic with user 'dreamstogo'
+> GET /GUS/1995/Deaths/ HTTP/1.1
+Host: images.freebmd.org.uk
+Authorization: Basic ZHJlYW1zdG9nbzpsYXBvdWdl
+Accept: */*
+
+* old SSL session ID is stale, removing
+< HTTP/1.1 200 OK
+< date: Tue, 26 Sep 2023 18:23:26 GMT
+< server: Apache/2.4.57 (FreeBSD) Phusion_Passenger/6.0.18 mod_perl/2.0.12 Perl/v5.34.1
+< last-modified: Tue, 26 Sep 2023 01:42:48 GMT
+< etag: "144-60639312bc8bd"
+< accept-ranges: bytes
+< content-length: 324
+< content-type: text/html
+< 
+* Connection #0 to host images.freebmd.org.uk left intact
+CURL...: https://images.freebmd.org.uk/GUS/1995/Deaths/ Time...: 0.152024 DNS: 0.001979000 Connect: 0.027826 SSL/SSH: 0.05663 PreTransfer: 0.056694 StartTransfer: 0.151822 Download: 0.000202000* processing: https://images.freebmd.org.uk/GUS/1995/Deaths/OFHS-03/
+*   Trying 5.9.175.2:443...
+* Connected to images.freebmd.org.uk (5.9.175.2) port 443
+* ALPN: offers http/1.1
+*  CAfile: /usr/local/share/certs/ca-root-nss.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted http/1.1
+* Server certificate:
+*  subject: CN=*.freebmd.org.uk
+*  start date: Sep  1 02:45:37 2023 GMT
+*  expire date: Nov 30 02:45:36 2023 GMT
+*  subjectAltName: host "images.freebmd.org.uk" matched cert's "*.freebmd.org.uk"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* using HTTP/1.1
+* Server auth using Basic with user 'dreamstogo'
+> GET /GUS/1995/Deaths/OFHS-03/ HTTP/1.1
+Host: images.freebmd.org.uk
+Authorization: Basic ZHJlYW1zdG9nbzpsYXBvdWdl
+Accept: */*
+
+* old SSL session ID is stale, removing
+< HTTP/1.1 200 OK
+< date: Tue, 26 Sep 2023 18:23:26 GMT
+< server: Apache/2.4.57 (FreeBSD) Phusion_Passenger/6.0.18 mod_perl/2.0.12 Perl/v5.34.1
+< last-modified: Tue, 26 Sep 2023 01:53:36 GMT
+< etag: "3818f-6063957cfa19b"
+< accept-ranges: bytes
+< content-length: 229775
+< content-type: text/html
+< 
+* Connection #0 to host images.freebmd.org.uk left intact
+CURL...: https://images.freebmd.org.uk/GUS/1995/Deaths/OFHS-03/ Time...: 0.234334 DNS: 0.000499000 Connect: 0.025722 SSL/SSH: 0.053408 PreTransfer: 0.053451 StartTransfer: 0.13367 Download: 0.100664000

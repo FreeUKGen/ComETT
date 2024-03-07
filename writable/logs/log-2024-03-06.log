@@ -1,0 +1,29 @@
+CRITICAL - 2024-03-06 09:43:09 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Controllers/Syndicate.php(460): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Syndicate->manage_users_step1()
+#2 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-06 17:09:07 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Views/templates/header.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/View/View.php(210): include('...')
+#2 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /data/www/freecomett/app/Controllers/Database.php(88): view()
+#5 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Database->coord_step1()
+#6 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-06 21:08:57 --> Trying to access array offset on value of type null
+#0 /data/www/freecomett/app/Views/templates/header.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/View/View.php(210): include('...')
+#2 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /data/www/freecomett/app/Controllers/Database.php(117): view()
+#5 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Database->tester_step1()
+#6 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

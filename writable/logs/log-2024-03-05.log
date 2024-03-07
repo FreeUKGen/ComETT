@@ -1,0 +1,78 @@
+CRITICAL - 2024-03-05 05:05:09 --> Undefined array key "panzoom_x"
+#0 /data/www/freecomett/app/Views/linBMD2/transcribe_details_enter.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/View/View.php(210): include('...')
+#2 /data/www/freecomett/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /data/www/freecomett/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /data/www/freecomett/app/Helpers/transcribe_helper.php(505): view()
+#5 /data/www/freecomett/app/Controllers/Deaths.php(29): App\Controllers\transcribe_show_step1()
+#6 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#7 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-05 12:05:43 --> syntax error, unexpected variable "$transcription"
+#0 /data/www/freecomett/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /data/www/freecomett/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /data/www/freecomett/system/CodeIgniter.php(797): class_exists()
+#4 /data/www/freecomett/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-05 12:06:12 --> syntax error, unexpected token "public"
+#0 /data/www/freecomett/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /data/www/freecomett/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /data/www/freecomett/system/CodeIgniter.php(797): class_exists()
+#4 /data/www/freecomett/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-05 12:09:57 --> Undefined array key "actual_y"
+#0 /data/www/freecomett/app/Helpers/transcribe_helper.php(407): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/app/Controllers/Deaths.php(27): App\Controllers\transcribe_initialise_step1()
+#2 /data/www/freecomett/system/CodeIgniter.php(832): App\Controllers\Deaths->transcribe_deaths_step1()
+#3 /data/www/freecomett/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /data/www/freecomett/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-03-05 16:47:22 --> unlink(/data/www/freecomett/writable/debugbar/debugbar_1709656759.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/Debug/Toolbar/Collectors/History.php(74): unlink()
+#2 /data/www/freecomett/system/Debug/Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+#3 /data/www/freecomett/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format()
+#4 /data/www/freecomett/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 /data/www/freecomett/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 /data/www/freecomett/system/CodeIgniter.php(308): CodeIgniter\Events\Events::trigger()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-05 16:52:22 --> unlink(/data/www/freecomett/writable/debugbar/debugbar_1709657177.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/Debug/Toolbar/Collectors/History.php(74): unlink()
+#2 /data/www/freecomett/system/Debug/Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+#3 /data/www/freecomett/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format()
+#4 /data/www/freecomett/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 /data/www/freecomett/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 /data/www/freecomett/system/CodeIgniter.php(308): CodeIgniter\Events\Events::trigger()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-05 17:25:57 --> unlink(/data/www/freecomett/writable/debugbar/debugbar_1709658788.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/Debug/Toolbar/Collectors/History.php(74): unlink()
+#2 /data/www/freecomett/system/Debug/Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+#3 /data/www/freecomett/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format()
+#4 /data/www/freecomett/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 /data/www/freecomett/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 /data/www/freecomett/system/CodeIgniter.php(308): CodeIgniter\Events\Events::trigger()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-05 17:35:21 --> unlink(/data/www/freecomett/writable/debugbar/debugbar_1709659556.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/www/freecomett/system/Debug/Toolbar/Collectors/History.php(74): unlink()
+#2 /data/www/freecomett/system/Debug/Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+#3 /data/www/freecomett/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format()
+#4 /data/www/freecomett/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 /data/www/freecomett/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 /data/www/freecomett/system/CodeIgniter.php(308): CodeIgniter\Events\Events::trigger()
+#7 /data/www/freecomett/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

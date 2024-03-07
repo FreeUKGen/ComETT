@@ -1,0 +1,12 @@
+<fileupload result=warnings
+>
+<uploadlink>
+https://test1.freebmd.org.uk/cgi/bmd-files.pl
+</uploadlink>
+<warnings>
+You do not appear to be a member of a syndicate transcribing this quarter. Please check you have the correct Year, Quarter and Event or contact your syndicate coordinator.  
+</warnings>
+<information>
+
+</information>
+</fileupload>

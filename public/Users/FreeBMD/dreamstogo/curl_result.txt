@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /GUS/1880/Deaths/December</title>
+ </head>
+ <body>
+<h1>Index of /<a href='/GUS/'>GUS</a>/<a href='/GUS/1880/'>1880</a>/<a href='/GUS/1880/Deaths/'>Deaths</a>/December</h1>
+<ul><li><a href="/GUS/1880/Deaths/"> Parent Directory</a></li>
+<li><a href='ANC-05/'>ANC-05/</a>
+<li><a href='LDS-211-000-0951256/'>LDS-211-000-0951256/</a>
+</ul>
+</body></html>
