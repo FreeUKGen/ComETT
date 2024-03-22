@@ -262,7 +262,7 @@ class Identity extends BaseController
 							$session->set('message_class_2', '');
 							return redirect()->to( base_url('identity/signin_step1/1') );
 						}
-						
+					
 					// multiple syndicates?
 					// transcribers can only be in one syndicate in FreeREG
 					
@@ -272,6 +272,25 @@ class Identity extends BaseController
 						->where('project_index', $session->current_project[0]['project_index'])
 						->where('BMD_syndicate_index', $id)
 						->find();
+					// none found?
+					if ( ! $session->current_syndicate )
+						{
+							// refresh FreeComETT syndicates
+							manage_syndicate_DB();
+							// try again
+							$session->current_syndicate = $syndicate_model
+								->where('project_index', $session->current_project[0]['project_index'])
+								->where('BMD_syndicate_index', $id)
+								->find();
+							// none found ?
+							if ( ! $session->current_syndicate )
+								{
+									// send error
+									$session->set('message_2', 'You do not appear to be a member of any syndicates. Please contact your coordinator.');
+									$session->set('message_class_2', '');
+									return redirect()->to( base_url('identity/signin_step1/1') );
+								}
+						}
 					break;
 					
 				case 'FreeCEN':
@@ -664,6 +683,7 @@ class Identity extends BaseController
 		$session->details_step = 3;
 		echo view('templates/header');
 		echo view('linBMD2/change_identity_step2');
+		echo view('templates/footer');
 	}	
 	
 	public function change_details_step3()

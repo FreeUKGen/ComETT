@@ -81,7 +81,6 @@
 				// get screen size
 				var actual_x = window.innerWidth;
 				var actual_y = window.innerHeight;
-//alert(clientWidth+' * '+clientHeight);
 				// load variables to form
 				$('#identity').val(document.getElementById("id").value);
 				$('#password').val(document.getElementById("pw").value);

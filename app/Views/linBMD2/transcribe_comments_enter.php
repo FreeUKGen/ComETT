@@ -18,7 +18,7 @@
 					<form action="<?php echo(base_url($session->controller.'/comment_step2')) ?>" method="post">
 						<tr>
 							<td>
-								<select class="box" name="comment_type" id="comment_type">
+								<select class="box" name="comment_type" id="comment_type" style="width: 400px">
 								<?php foreach ($session->comment_types as $key => $type): ?>
 									 <option value="<?php echo esc($key)?>"<?php if ( $key == $session->comment_type ) {echo esc(' selected');} ?>><?php echo esc($type)?></option>
 								<?php endforeach; ?>
@@ -26,7 +26,7 @@
 							</td>
 			
 							<td><input type="text" id="comment_span" name="comment_span" value="<?php echo esc($session->comment_span);?>"></td>
-							<td><input type="text" id="comment_text" name="comment_text" placeholder="eg => Entry reads CRITCHER or SMITH for mother's name." value="<?php echo esc($session->comment_text);?>"></td>
+							<td><input class="col-10 pl-0" type="text" id="comment_text" name="comment_text" placeholder="eg => Entry reads CRITCHER or SMITH for mother's name." value="<?php echo esc($session->comment_text);?>"></td>
 						</tr>	
 				</tbody>
 			</table>

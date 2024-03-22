@@ -85,7 +85,7 @@ class District extends BaseController
 				case 'NODRI': // nothing was selected
 					$session->set('message_2', 'Please select an action to perform from the dropdown.');
 					$session->set('message_class_2', 'alert alert-danger');
-					return redirect()->to( base_url('surname/manage_districts/2') );
+					return redirect()->to( base_url('district/manage_districts/2') );
 					break;
 				case 'CHGDI': // Correct district
 					$session->district_index = $district_record[0]['district_index'];

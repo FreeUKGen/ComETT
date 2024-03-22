@@ -2,17 +2,13 @@
 	
 	<!-- Inject initial values for Panzoom here (x, y, zoom) -->
 			<div class="panzoom-wrapper row">
-				<div class="panzoom">
-					<?php echo 
-								"<img 
-									src=\"data:$session->mime_type;base64,$session->fileEncode\" 
-									alt=\"$session->image\" 
-									data-x=\"$session->panzoom_x\" 
-									data-y=\"$session->panzoom_y\" 
-									data-zoom=\"$session->panzoom_z\" 
-									data-s=\"$session->sharpen\"  
-									data-scroll=\"$session->scroll_step\"
-								>"; 
+			<div class="panzoom" id='panzoom'>
+				<?php echo 
+							"<img
+								src=\"data:$session->mime_type;base64,$session->fileEncode\"
+								alt=\"$session->image\"  
+								data-scroll=\"$session->scroll_step\"
+							>";
 					?>
 				</div>
 			</div>

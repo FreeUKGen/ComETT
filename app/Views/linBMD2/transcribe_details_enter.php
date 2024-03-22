@@ -18,8 +18,12 @@
 		
 		<!-- show data entry  first line-->
 		<form action="<?php echo(base_url($session->controller.'/transcribe_'.$session->controller.'_step2')) ?>" method="post">
-		
-		
+		<!-- Form part to save Panzoom and Sharpen state -->
+		<input type="hidden" name="panzoom_x" id="input-x" readonly>
+		<input type="hidden" name="panzoom_y" id="input-y" readonly>
+		<input type="hidden" name="panzoom_z" id="input-zoom" readonly>
+		<input type="hidden" name="sharpen" id="input-sharpen">
+		<input type="hidden" name="defFields" id="input-defFields">
 		
 		<!-- show transcription comment text  -->
 		<div class="form-group row d-flex align-items-center">
@@ -28,7 +32,7 @@
 			<small id="userHelp" class="form-text text-muted col-4">You can enter / change a comment at any time for this transcription here if you want. If you want to remove it, just make it blank. The comment will be updated each time you enter a detail line.</small>
 		</div>
 		
-		<div class="form-inline row d-flex align-items-center" draggable="false" id="dragme_no">
+		<div class="form-inline row d-flex align-items-center" style="flex-flow: row nowrap !important" draggable="false" id="dragme_no">
 
 			<!-- show last line entered -->
 			<?php
@@ -44,14 +48,15 @@
 								<input
 									class=	"form-control"
 									style=	"	height: 			auto; 
-												width: 				<?php if (esc($td['column_width']) > 0) {echo esc(($td['column_width']/$session->actual_x)*100);}?>vw; 
+												margin-right: 		5px;
+												width: 				<?php if (esc($td['column_width']) > 0) {echo esc($td['column_width']);}?>px; 
 												font-size: 			<?= esc($td['font_size']);?>vw; 
 												font-weight: 		<?= esc($td['font_weight']);?>;
 												text-align: 		<?php echo esc($td['field_align']);?>;
 												padding-left: 		<?= esc($td['pad_left']).'px';?>;
 												background-color: 	<?= esc($td['colour']);?>;
 											"
-									type=		"<?= esc($td['field_format']);?>"; 
+									type=		"<?php if ( $td['special_test'] == 'should_be_blank' ) { echo esc('hidden'); } else { echo esc($td['field_format']); }?>"; 
 									value=		"<?php echo esc($session->lastEl[$td['table_fieldname']]);?>"
 									tabindex=	"-1"
 									readonly	
@@ -75,25 +80,27 @@
 			</div>
 		</div>
 				
-			<div class="form-inline row d-flex align-items-center" draggable="false" id="dragme_no">
+			<div class="form-inline row" draggable="false" id="dragme_no">
 			<?php
+				//style="flex-flow: row nowrap !important"
+				//class="form-inline row d-flex align-items-center"
 				// loop through table element by element
-				foreach ($session->current_transcription_def_fields as $td) 
+				foreach ($session->current_transcription_def_fields as $key =>$td) 
 					{ 
 						$fn = $td['html_name']; ?>
 						<!-- output data -->
 						<input
-							class=	"form-control"
-							style=	"	height: 		auto; 
-										width: 			<?php if (esc($td['column_width']) > 0) {echo esc(($td['column_width']/$session->actual_x)*100);}?>vw; 
+							class=	"resizable form-control"
+							style=	"	height: 		auto;
+										width: 			<?php if (esc($td['column_width']) > 0) {echo esc($td['column_width']);}?>px; 
 										font-size: 		<?= esc($td['font_size']);?>vw; 
 										font-weight: 	<?= esc($td['font_weight']);?>;
 										text-align: 	<?php echo esc($td['field_align']);?>;
 										padding-left: 	<?= esc($td['pad_left']).'px';?>;
 										background-color: <?= esc($td['colour']);?>;
-										<?php if ($session->error_field == $td['html_name']) { ?> background-color: #ff0000 <?php } ?>
+										<?php if ($session->error_field == $td['html_name']) { ?> border:4px solid red; <?php } ?>; 
 									"
-							type=	"<?= esc($td['field_format']);?>"; 
+							type=	"<?php if ( $td['special_test'] == 'should_be_blank' ) { echo esc('hidden'); } else { echo esc($td['field_format']); }?>";
 							id=		"<?php echo esc($td['html_id']);?>" 
 							name=	"<?php echo esc($td['html_name']);?>"
 							placeholder="<?php echo esc($td['column_name']);?>"
@@ -101,7 +108,7 @@
 							autocomplete="off"
 							title=	"<?php echo "This is this column ".esc($td['column_name']);?>"
 							<?php if ($session->position_cursor == $td['html_name']) { echo 'autofocus'; } ?>
-							<?php if ($td['virtual_keyboard'] == 'YES' ) { echo 'virtual-keyboard'; } ?>	
+							<?php if ($td['virtual_keyboard'] == 'YES' ) { echo 'virtual-keyboard'; } ?>
 						>
 						<?php
 							if ($td['virtual_keyboard'] == 'YES' )
@@ -119,16 +126,7 @@
 					<?php 
 					} ?>
 			</div>	
-		<!-- Form part to save Panzoom and Sharpen state -->
-		<input type="text" name="actual_x" id="actual_x" value="<?php echo $session->actual_x;?>" readonly>
-		<input type="text" name="header_x" id="header_x" value="<?php echo 1920;?>" readonly>
-		<input type="text" name="ratio_x" id="ratio_x" value="<?php echo $session->actual_x / 1920;?>" readonly>
-		<input type="text" name="calib_x" id="calib_x" value="<?php echo $session->current_transcription[0]['BMD_panzoom_x'];?>" readonly>
-		<input type="text" name="panzoom_x" id="input-x" readonly>
-		<input type="text" name="panzoom_y" id="input-y" readonly>
-		<input type="text" name="panzoom_z" id="input-zoom" readonly>
 		
-		<input type="hidden" name="sharpen" id="input-sharpen">
 	<!-- ATTENTION - the form is closed in the transcribe_buttons view -->
 		
 	

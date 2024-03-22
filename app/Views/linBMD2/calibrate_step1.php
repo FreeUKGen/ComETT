@@ -5,6 +5,8 @@
 	<div>
 		<!-- form to capture image parms -->
 		<form action="<?php echo(base_url('/transcribe/calibrate_step2')) ?>" method="post">
+			<input type="hidden" name="client_x" id="client-x" readonly>
+			<input type="hidden" name="client_y" id="client-y" readonly>
 			<?php
 			switch ($session->calibrate) 
 						{
@@ -66,72 +68,17 @@
 									<!-- number of lines -->
 									<label for="input_scroll_lines" class="col-2 pl-0">Number of lines to use for scroll step calculation :</label>
 									<input type="number" class="form-control col-1" autofocus id="input_scroll_lines" name="panzoom_l" value="<?php echo($session->panzoom_l); ?>">
-									<small id="userHelp" class="form-text text-muted col-5">Enter the number of lines you intend to use for calibrating the Scroll Step. The more the better. </small>
+									<small id="userHelp" class="form-text text-muted col-5">Enter the number of lines you can see in the image to calculate the scroll step. Only enter the number of WHOLE lines that you can see. </small>
 									
 									<!-- scroll step -->
 									<label for="input_scroll_step" class="col-1 pl-0">Scroll Step :</label>
 									<input type="number" step="0.1" min="1" max="100" class="form-control col-1" id="input_scroll_step" name="panzoom_s" aria-describedby="userHelp" value="<?php echo($session->panzoom_s); ?>">
-									<small id="userHelp" class="form-text text-muted col-2">You can use the RED bar method or manually enter a value here by using the up/down arrows in the input field. </small>
-								</div>
-								
-								<!-- instructions -->
-								<div class="form-group row d-flex align-items-center">
-									<p class="col-12 pl-0">Now click and drag the red ruler to cover the horizontal center of first line. Press CTRL + Arrow Down (<i>MAC = SHIFT+CONTROL+COMMAND+DownArrow</i>) until the red ruler has descended to cover centre of 10th line or number of lines available. Watch the height and scroll step being calculated.</p>
+									<small id="userHelp" class="form-text text-muted col-2">You can refine the scroll step manually entering a value here by using the up/down arrows in the input field. </small>
 								</div>
 
 								<?php
 								break;	
 							
-							// data entry fields	
-							case 2: ?>
-							
-								<!-- instructions -->
-								<div class="form-group row d-flex align-items-center">
-									<p class="col-12 pl-0">Select the field you want to work with from the drop-down list. Move the red box so that its left-hand side is on the start of the data for that field. Press CTRL+arrow-right (<i>MAC = CONTROL+COMMAND+RightArrow</i>) to extend the red box to the end of the field. The end of the field is not necessarily the end of the data; it could be the start of the next field. CTRL+arrow-left (<i>MAC = CONTROL+COMMAND+LeftArrow</i>) will reduce the length of the red box. You can drag the row of fields to the image which may help with alignment.</p>
-								</div>
-								
-								<div class="row d-flex align-items-center">
-									<label for="input_field" class="col-1 pl-0">Input Field</label>
-										<select class="box" name="input_field" id="input_field">
-											<?php foreach ($session->current_transcription_def_fields as $key => $td): ?>
-													 <option value="<?= esc($td['html_id'])?>">
-														<?= esc($td['column_name'])?>
-													</option>
-											<?php endforeach; ?>
-										</select>
-								</div>
-
-								<br>
-								
-								<div class="form-group row d-flex align-items-center" draggable="false" id="dragme_no">
-								<?php
-									// loop through table element by element
-									foreach ($session->current_transcription_def_fields as $td) 
-										{ ?>
-											<!-- output data -->
-											<input
-												class=	"form-control"
-												style=	"	
-															height: 		auto; 
-															width: 			<?php if (esc($td['column_width']) > 0) {echo esc($td['column_width']);}?>px; 
-															font-size: 		<?= esc($td['font_size']);?>vw; 
-															font-weight: 	<?= esc($td['font_weight']);?>;
-															text-align: 	<?php echo esc($td['field_align']);?>;
-															padding-left: 	<?= esc($td['pad_left']).'px';?>;
-															border: 		2px  solid rgba(0,0,0,0.5);
-															border-radius: 	4px;	
-														"
-												type=	"number" 
-												id=		"<?php echo esc($td['html_id']);?>" 
-												name=	"<?php echo esc($td['html_name']);?>"
-												value=	"<?php echo esc($td['column_width']); ?>"
-												readonly
-											>
-										<?php
-										} ?>
-								</div>
-								<?php
-								break;
 						} ?>			
 	</div>
 	
@@ -139,7 +86,7 @@
 	<!-- Inject initial values for Panzoom here (x, y, zoom ...) -->
 	<br>
 	<div class="panzoom-wrapper">
-		<div class="panzoom" id="panzoom_image">
+		<div class="panzoom" id="panzoom">
 			<?php
 				echo 
 						"<img 
@@ -242,6 +189,41 @@
 							imgs[i].style.transform = "rotate("+rotateImage+"deg)";
 						}
 				});
+		}
+		
+	<!-- apply client_x and client_y if stage 0 -->
+	if ( calibrateStage == '0' )
+		{
+			var panzoomID = document.getElementById("panzoom");
+			var client_x = panzoomID.clientWidth;
+			var client_y = panzoomID.clientHeight;
+			$('#client-x').val(JSON.stringify(client_x));
+			$('#client-y').val(JSON.stringify(client_y));
+		}
+		
+	<!-- calculate scroll step and window height -->
+	document.getElementById("input_scroll_lines").addEventListener("blur", calcSS);
+	function calcSS() 
+		{
+			// get input
+			var inputLines = document.getElementById("input_scroll_lines").value;
+			if ( inputLines == 0 )
+				{
+					alert('Please enter the number of whole lines you can see in the image below.');
+				}
+				
+			// get required data
+			var imageY = <?php echo json_encode($session->image_y); ?>;
+			var panzoomZ = <?php echo json_encode($session->panzoom_z); ?>;
+			var heightL = <?php echo json_encode($session->height_l); ?>;
+				
+			// calculate scroll step
+			var scrollStep = imageY / inputLines / panzoomZ;
+			$('#input_scroll_step').val(scrollStep);
+			
+			// calculate image height
+			var imageHeight = heightL * scrollStep;
+			$('#input_height_image').val(imageHeight);
 		}
 		
 </script>

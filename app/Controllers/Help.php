@@ -49,6 +49,7 @@ class Help extends BaseController
 		// show views																
 		echo view('templates/header');
 		echo view('linBMD2/help_show');
+		echo view('templates/footer');
 	}
 	
 	public function help_manage($start_message)

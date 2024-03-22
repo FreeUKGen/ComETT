@@ -120,6 +120,10 @@ class Deaths extends BaseController
 			{
 				return redirect()->to( base_url('deaths/transcribe_deaths_step1/1') );
 			}
+	
+		// get defFields input
+		//$session->set('defFields', json_decode($_POST['defFields']));
+//dd($session->defFields);
 			
 		// if verify onthefly active, verify
 		if ( $session->current_identity[0]['verify_mode'] == 'onthefly' AND $session->verify_onthefly == 0 )

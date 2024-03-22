@@ -47,15 +47,16 @@
 								<!-- background = bootstrap alert-success colour see=https://colorswall.com/palette/3107 -->
 								<input
 									class=	"form-control"
-									style=	"	height: 			auto; 
-												width: 				<?php if (esc($td['column_width']) > 0) {echo esc(($td['column_width']/1920)*100);}?>vw; 
+									style=	"	height: 			auto;
+												margin-right: 		5px; 
+												width: 				<?php if (esc($td['column_width']) > 0) {echo esc($td['column_width']);}?>px; 
 												font-size: 			<?= esc($td['font_size']);?>vw; 
 												font-weight: 		<?= esc($td['font_weight']);?>;
 												text-align: 		<?php echo esc($td['field_align']);?>;
 												padding-left: 		<?= esc($td['pad_left']).'px';?>;
 												background-color: 	<?= esc($td['colour']);?>;
 											"
-									type=		"<?= esc($td['field_format']);?>";
+									type=	"<?php if ( $td['special_test'] == 'should_be_blank' ) { echo esc('hidden'); } else { echo esc($td['field_format']); }?>";
 									value=		"<?php echo esc($session->lastEl[$td['table_fieldname']]);?>"
 									tabindex=	"-1"
 									readonly	
@@ -88,8 +89,9 @@
 							<!-- output data -->
 							<input
 								class=	"form-control"
-								style=	"	height: 			auto; 
-											width: 				<?php if (esc($td['column_width']) > 0) {echo esc(($td['column_width']/1920)*100);}?>vw; 
+								style=	"	height: 			auto;
+											margin-right: 		5px;
+											width: 				<?php if (esc($td['column_width']) > 0) {echo esc($td['column_width']);}?>px; 
 											font-size: 			<?= esc($td['font_size']);?>vw; 
 											font-weight: 		<?= esc($td['font_weight']);?>;
 											text-align: 		<?php echo esc($td['field_align']);?>;
@@ -103,7 +105,7 @@
 																				echo '#fff3cd';
 																			} ?>;
 										"
-								type=							"text" 
+								type=	"<?php if ( $td['special_test'] == 'should_be_blank' ) { echo esc('hidden'); } else { echo esc($td['field_format']); }?>";
 								id=								"<?php echo esc($td['html_id'].$session->detail_line['BMD_index']);?>"
 								name=							"<?php echo esc($td['html_name']);?>"
 								placeholder=					"<?php echo esc($td['column_name']);?>"

@@ -3,7 +3,6 @@
 use App\Models\Districts_Model;
 use App\Models\Parameter_Model;
 use App\Models\Volumes_Model;
-use App\Models\Volume_Ranges_Model;
 use App\Models\Firstname_Model;
 use App\Models\Surname_Model;
 use App\Models\Detail_Data_Model;

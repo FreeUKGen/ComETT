@@ -55,19 +55,21 @@
 				{
 					document.getElementById("insert_before_line").scrollIntoView({ behavior: "instant", block: "end", inline: "nearest" });
 				}
+			else if ( document.getElementById("inserted_line") )
+				{
+					document.getElementById("inserted_line").scrollIntoView({ behavior: "instant", block: "end", inline: "nearest" });
+				}
+			else if ( document.getElementById("modified_line") )
+				{
+					document.getElementById("modified_line").scrollIntoView({ behavior: "instant", block: "end", inline: "nearest" });
+				}
+			else if ( document.getElementById("last_line") )
+				{
+					document.getElementById("last_line").scrollIntoView({ behavior: "instant", block: "end", inline: "nearest" });
+				}
 			else
 				{
-					if ( document.getElementById("inserted_line") )
-						{
-							document.getElementById("inserted_line").scrollIntoView({ behavior: "instant", block: "end", inline: "nearest" });
-						}
-					else
-						{
-							if ( document.getElementById("last_line") )
-								{
-									document.getElementById("last_line").scrollIntoView({ behavior: "instant", block: "end", inline: "nearest" });
-								}
-						}
+					document.getElementById("last_line").scrollIntoView({ behavior: "instant", block: "end", inline: "nearest" });
 				}
 		});
 

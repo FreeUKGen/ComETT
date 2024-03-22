@@ -266,6 +266,7 @@ use App\Models\Transcription_CSV_File_Model;
 	{
 		$session = session();
 		$detail_data_model = new Detail_Data_Model();
+		$detail_comments_model = new Detail_Comments_Model();
 		$def_ranges_model = new Def_Ranges_Model();
 		$transcription_detail_def_model = new Transcription_Detail_Def_Model();
 		$transcription_comments_model = new Transcription_Comments_Model();
@@ -304,7 +305,7 @@ use App\Models\Transcription_CSV_File_Model;
 					$session->set('message_class_1', 'alert alert-primary');
 					if ( $session->current_transcription[0]['zoom_lock'] == 'Y' )
 						{
-							$session->message_2 = 'Image zoom locked by yourself during Calibration.';
+							$session->message_2 = 'Image zoom locked during Calibration.';
 							$session->message_class_2 = 'alert alert-info';
 						}
 					else
@@ -326,6 +327,7 @@ use App\Models\Transcription_CSV_File_Model;
 					$session->set('same_ok', 'N');
 					$session->set('line_edit_flag', 0);
 					$session->set('last_detail_index', 0);
+					$session->def_update_flag = 0;
 					if ( $session->insert_line_flag == 0 )
 						{
 							$session->insert_before_line_sequence = 0;
@@ -397,35 +399,10 @@ use App\Models\Transcription_CSV_File_Model;
 								}							
 							
 							// set image panzoom parameters for next line to be keyed
-							// calc responsive panzoom x against the screen size at time of transcription
-							$session->panzoom_x = ($session->current_transcription[0]['BMD_panzoom_x']*$session->actual_x)/$session->current_transcription[0]['header_x'];
-								
-							if ( $session->lastEl['BMD_line_panzoom_y'] != 0 )
-								{
-									// calc responsive scroll step and responsive panzoom y
-									$responsive_scroll_step = ($session->current_transcription[0]['BMD_image_scroll_step'] * $session->actual_y) / $session->current_transcription[0]['header_y'];
-									$responsive_panzoom_y = ($session->lastEl['BMD_line_panzoom_y'] * $session->lastEl['actual_y']) / $session->detail_y;
-									
-									// calc new panzoom y
-									$session->panzoom_y = $responsive_panzoom_y - $responsive_scroll_step;
-
-								}
-							else
-								{
-									// calc percent of panzoom y against the screen size at time of transcription
-									$percent = ($session->current_transcription[0]['BMD_panzoom_y'] / $session->lastEl['detail_y']) * 100;
-									// calc new panzoom x as percentage of actual screen size
-									$session->panzoom_y = ($percent * $session->actual_y) / 100;
-								}
-							
-							if ( $session->lastEl['BMD_line_panzoom_z'] != 0 )
-								{
-									$session->set('panzoom_z', $session->lastEl['BMD_line_panzoom_z']);
-								}
-							else
-								{
-									$session->set('panzoom_z', $session->current_transcription[0]['BMD_panzoom_z']);
-								}
+							// default to header values because they are updated when a line is added to DB but adjust y by scroll step to present next line in image
+							$session->panzoom_x = $session->current_transcription[0]['BMD_panzoom_x'];
+							$session->panzoom_y = $session->current_transcription[0]['BMD_panzoom_y'] - $session->current_transcription[0]['BMD_image_scroll_step'];
+							$session->panzoom_z = $session->current_transcription[0]['BMD_panzoom_z'];
 						}
 					else
 						{
@@ -436,14 +413,9 @@ use App\Models\Transcription_CSV_File_Model;
 							$session->line = 10;
 							$session->surname = '';
 							// set image and panzoom parameters from transcription header
-							
-							$session->panzoom_x = $session->current_transcription[0]['BMD_panzoom_x'] * $session->actual_x / 1920;
-							
-							$respon_y =  $session->image_y * $session->actual_y / 1080;
-							$session->panzoom_y = 
-								($session->current_transcription[0]['BMD_panzoom_y'] * $respon_y / $session->image_y)
-								+ ($session->current_transcription[0]['BMD_image_scroll_step'] * $session->current_transcription[0]['BMD_panzoom_z']);
-							
+							// when in INPRO and new transcription because lastEl is empty x and y values are recalculated in the transcribe_panzoom.php based on the panzoom div size.
+							$session->panzoom_x = $session->current_transcription[0]['BMD_panzoom_x'];
+							$session->panzoom_y = $session->current_transcription[0]['BMD_panzoom_y'];							
 							$session->panzoom_z = $session->current_transcription[0]['BMD_panzoom_z'];
 							$session->sharpen = $session->current_transcription[0]['BMD_sharpen'];
 							$session->scroll_step = $session->current_transcription[0]['BMD_image_scroll_step'];
@@ -473,7 +445,20 @@ use App\Models\Transcription_CSV_File_Model;
 					if ( $session->comment_text_array )
 						{
 							$session->comment_text = $session->comment_text_array[0]['comment_text'];
-						}																						
+						}
+						
+					// Check for Suggestion Comments
+					$suggestion_comments = $detail_comments_model
+						->where('project_index', $session->current_project[0]['project_index'])
+						->where('BMD_header_index', $session->current_transcription[0]['BMD_header_index'])
+						->where('BMD_comment_type', 'S')
+						->findAll();
+					if ( $suggestion_comments )
+						{
+							$session->message_2 = 'Your Coordinator has left you suggestions. Look for "S" against a detail line. You need to clear all suggestions before you can upload.';
+							$session->message_class_2 = 'alert alert-warning';
+						}
+						
 					break;
 				case 1:
 					break;
@@ -489,7 +474,7 @@ use App\Models\Transcription_CSV_File_Model;
 	function transcribe_show_step1($controller)
 	{	
 		// initialise
-		$session = session();		
+		$session = session();				
 		
 		// show header																
 		echo view('templates/header');
@@ -510,7 +495,6 @@ use App\Models\Transcription_CSV_File_Model;
 				case 'transcribe':
 					echo view('linBMD2/transcribe_details_enter');
 					echo view($button_view);
-					//echo view('linBMD2/transcribe_dragable');
 					echo view('linBMD2/transcribe_details_show');
 					echo view('linBMD2/transcribe_cheat_sheet');
 					echo view('linBMD2/transcribe_panzoom');
@@ -561,6 +545,8 @@ use App\Models\Transcription_CSV_File_Model;
 	{
 		// initialise method
 		$session = session();
+		$transcription_detail_def_model = new Transcription_Detail_Def_Model();
+		
 		if ( $session->district_added == 1 )
 			{
 				$_POST = $session->save_post_data;
@@ -586,6 +572,32 @@ use App\Models\Transcription_CSV_File_Model;
 	
 		// get comment text input
 		$session->set('comment_text', $_POST['comment_text']);
+		
+		// get defFields input
+		$session->set('defFields', json_decode($_POST['defFields']));
+		
+		// update detail defs with column_width in case user used resize or field widths have been recalculated
+		if ( $session->defFields )
+			{
+				// update def fields
+				foreach ( $session->defFields as $defField )
+					{
+						$transcription_detail_def_model
+							->set(['column_width' => $defField->column_width])
+							->update($defField->field_index);
+					}
+				
+				// set update flag
+				$session->def_update_flag = 1;		
+			}
+			
+		// reload def fields
+		$session->current_transcription_def_fields = $transcription_detail_def_model
+			->where('project_index', $session->current_project[0]['project_index'])
+			->where('transcription_index', $session->current_transcription[0]['BMD_header_index'])
+			->where('scan_format', $session->current_allocation[0]['scan_format'])
+			->orderby('field_order','ASC')
+			->findAll();	
 	}
 				
 	function transcribe_get_confirm_district_inputs($controller)
@@ -1041,20 +1053,23 @@ use App\Models\Transcription_CSV_File_Model;
 		$transcription_model = new Transcription_Model();
 		$detail_data_model = new Detail_Data_Model();
 		$transcription_comments_model = new Transcription_Comments_Model();
+		$transcription_detail_def = new Transcription_Detail_Def_Model();
 		
 		// trap blank lines
 		$trap_blank_line = 0;
-
 		foreach ( $session->current_transcription_def_fields as $field )
 			{
-				// get html field name
-				$fn = $field['html_name'];
-				
-				// test data field
-				if ( $session->$fn == '' )
+				if ( $field['special_test'] != 'should_be_blank' )
 					{
-						// if any of the fields is blank trap line
-						$trap_blank_line = 1;
+						// get html field name
+						$fn = $field['html_name'];
+						
+						// test data field
+						if ( $session->$fn == '' )
+							{
+								// if any of the fields is blank trap line
+								$trap_blank_line = 1;
+							}
 					}
 			}
 			
@@ -1070,6 +1085,7 @@ use App\Models\Transcription_CSV_File_Model;
 						// we are inserting a line
 						$line_sequence = $session->insert_line_sequence;
 						$session->line_added_flag = 1;
+						$session->modify_line_sequence = 0;
 					}
 				else
 					{
@@ -1079,6 +1095,7 @@ use App\Models\Transcription_CSV_File_Model;
 								// we are still adding a line
 								$line_sequence = $session->line;
 								$session->line_added_flag = 0;
+								$session->modify_line_sequence = 0;
 							}
 						else
 							{
@@ -1223,7 +1240,7 @@ use App\Models\Transcription_CSV_File_Model;
 							'comment_sequence' => 10,
 							'comment_text' => $session->comment_text,
 						];
-				$transcription_comments_model->insert($data);
+				$transcription_comments_model->insert($data);			
 				
 				// set view type
 				$session->set('show_view_type', 'transcribe');	
@@ -1718,10 +1735,10 @@ use App\Models\Transcription_CSV_File_Model;
 								
 								break;
 							case 'ddccyyyy':
-								// isolate day
+								// isolate day, month and year
 								$day = substr($current_input_data, 0, 2);
 								$month = strtoupper(substr($current_input_data, 2, 2));
-								$year = substr($current_input_data, 4, 4);
+								$year = substr($current_input_data, 4);
 								
 								// test valid day
 								if ( ! in_array($day, $session->valid_days) )
@@ -1761,7 +1778,7 @@ use App\Models\Transcription_CSV_File_Model;
 									{
 										$session->set('position_cursor', $session->fieldname);
 										$session->set('error_field', $session->fieldname);
-										$session->set('message_2', $field['column_name'].' is not in the correct format - year must be 4 digits long.');
+										$session->set('message_2', $field['column_name'].' is not in the correct format - year must be 4 digits long. Use # at end of field to avoid error checking.');
 										$session->set('message_class_2', 'alert alert-danger');
 										$session->set('message_error', 'error');
 										return;
@@ -1793,7 +1810,7 @@ use App\Models\Transcription_CSV_File_Model;
 								// isolate day
 								$day = substr($current_input_data, 0, 2);
 								$month = strtoupper(substr($current_input_data, 3, 2));
-								$year = substr($current_input_data, 6, 4);
+								$year = substr($current_input_data, 6);
 								
 								// test valid day
 								if ( ! in_array($day, $session->valid_days) )
@@ -1862,7 +1879,7 @@ use App\Models\Transcription_CSV_File_Model;
 									$session->synonym = '';
 									$session->set('show_view_type', 'confirm_district');
 									$session->set('error_field', $session->fieldname);
-									$session->set('message_2', 'This district is unknown => '.$current_input_data.' <= Did you spell it correctly? If you didn\'t just click Continue to correct your entry. If you are sure about the spelling, try to find a synonym for it.');
+									$session->set('message_2', 'This district is unknown => '.$current_input_data.' <= Did you spell the new district name correctly? If not, just click Back and Type What You See. If you are sure your new spelling is right, try to find a synonym for it and Continue.');
 									$session->set('message_class_2', 'alert alert-danger');
 									$session->set('message_error', 'error');
 									return;

@@ -63,7 +63,7 @@ class Email extends BaseController
 					fwrite($fhup, $session->BMD_data);
 					$tmpf = stream_get_meta_data($fhup)['uri'];
 					fclose($fhup);
-					// get corodinator's firstname
+					// get coordinator's firstname
 					$leader = explode(' ', $session->current_syndicate[0]['BMD_syndicate_leader']);
 					$mail->addAddress($session->current_syndicate[0]['BMD_syndicate_email']);
 					$mail->addReplyTo($session->identity_emailid);

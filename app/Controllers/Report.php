@@ -3,7 +3,6 @@
 use App\Models\Districts_Model;
 use App\Models\Parameter_Model;
 use App\Models\Volumes_Model;
-use App\Models\Volume_Ranges_Model;
 use App\Models\Firstname_Model;
 use App\Models\Surname_Model;
 use App\Models\Detail_Data_Model;
@@ -251,7 +250,7 @@ class Report extends BaseController
 		$session->set('message_1', 'FreeComETT Reporting.' );
 		$session->set('message_class_1', 'alert alert-primary');
 		$session->set('message_2', 'Please refine your report by choosing the report dimensions and filters that you wish to analyse.');
-		$session->set('message_class_2', 'alert alert-warning');
+		$session->set('message_class_2', 'alert alert-info');
 			
 		// show views
 		echo view('templates/header');

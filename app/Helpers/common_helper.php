@@ -113,7 +113,8 @@ function load_variables()
 								"N" => "no type = Used to give information about the transcription", 
 								"B" => "Add a +BREAK line",
 								"P" => "Add a +PAGE line (only if 2 or more page scan)",
-								"R" => "THEORY REF = used to indicate a reference to a late registration in standard format."
+								"R" => "THEORY REF = used to indicate a reference to a late registration in standard format.",
+								"S" => "SUGGESTION = Your Coordinator has left you a suggestion for this line(s).",
 							];
 		// load transcrition cycle
 		$transcription_cycles = $transcription_cycle_model->orderby('BMD_cycle_sort', 'ASC')->findAll();
@@ -351,10 +352,13 @@ function manage_syndicate_DB()
 									]
 								);
 								
+							// decode syndicate IDid
+							$id = $active_syndicate['_id']->__toString();
+							
 							// does this syndicate exist in FreeComETT syndicates table
 							$exists	= $syndicate_model
 								->where('project_index', $session->current_project[0]['project_index'])
-								->where('BMD_syndicate_name', $active_syndicate['syndicate_code'])
+								->where('BMD_syndicate_index', $id)
 								->find();
 													
 							// found?
@@ -368,10 +372,7 @@ function manage_syndicate_DB()
 										->update();
 								}
 							else
-								{
-									// decode syndicate IDid
-									$id = $active_syndicate['_id']->__toString();
-																
+								{					
 									// insert it as active
 									$syndicate_model
 										->set(['project_index' => $session->current_project[0]['project_index']])

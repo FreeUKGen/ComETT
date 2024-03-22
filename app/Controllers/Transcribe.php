@@ -152,10 +152,7 @@ class Transcribe extends BaseController
 					}
 				$session->set('message_class_2', 'alert alert-danger');
 			}
-			
-		
 								
-		
 		// show open headers for this user for view transcribe_home														
 		echo view('templates/header');
 		switch ($session->show_view_type) 
@@ -358,7 +355,8 @@ class Transcribe extends BaseController
 					break;
 				case 'VERIT': // verify transcription file
 					// initialise
-					$session->detail_line_index = $session->current_transcription[0]['last_verified_detail_index'];	
+					$session->detail_line_index = $session->current_transcription[0]['last_verified_detail_index'];
+					$session->modify_line_sequence = 0;	
 					
 					// setup image and parameters
 					$this->setup_image_and_parameters();
@@ -557,6 +555,7 @@ class Transcribe extends BaseController
 		$transcription_model = new Transcription_Model();
 		$allocation_model = new Allocation_Model();
 		$detail_data_model = new Detail_Data_Model();
+		$detail_comments_model = new Detail_Comments_Model();
 		$transcription_CSV_file_model = new Transcription_CSV_File_Model();
 		
 		// get detail data
@@ -579,6 +578,19 @@ class Transcribe extends BaseController
 			{
 				$session->set('message_2', 'Before uploading your transcribed data you must verify it. Please do so by selecting the \'Verify Transcription\' option.');
 				$session->set('message_class_2', 'alert alert-danger');
+				return redirect()->to( base_url('transcribe/transcribe_step1/2') );
+			}
+			
+		// are there any suggestion comments?
+		$suggestion_comments = $detail_comments_model
+			->where('project_index', $session->current_project[0]['project_index'])
+			->where('BMD_header_index', $session->current_transcription[0]['BMD_header_index'])
+			->where('BMD_comment_type', 'S')
+			->findAll();
+		if ( $suggestion_comments )
+			{
+				$session->message_2 = 'You must clear any Suggestions left by your Coordinator before you can upload. Go to Transcribe from Scan and search for S in annotations column.';
+				$session->message_class_2 = 'alert alert-danger';
 				return redirect()->to( base_url('transcribe/transcribe_step1/2') );
 			}
 		
@@ -1062,6 +1074,7 @@ class Transcribe extends BaseController
 		// save last detail line and get new detail line
 		$session->lastEl = $session->detail_line;
 		$session->detail_line = $session->transcribe_detail_data[$session->detail_line_index];
+		$session->modify_line_sequence = 0;
 		
 		// set last detail index for line highlight and scrollintoview
 		$session->set('last_detail_index', $session->detail_line['BMD_index']);
@@ -1219,7 +1232,7 @@ class Transcribe extends BaseController
 						];	
 			}
 			
-		// if counts are the same the transcription cannot be complete
+		// if counts are the same the transcription is complete
 		if ( $session->total_lines == $session->verified_lines )
 			{
 				$data =	[
@@ -2364,21 +2377,11 @@ class Transcribe extends BaseController
 								$session->set('save_image_y', $session->current_transcription[0]['BMD_image_y']);
 								// image height at start needs to be high in order to see enough lines for calibration
 								$session->image_y = 350;
-								$session->panzoom_l = 10;
+								$session->panzoom_l = 0;
 								$session->height_l = 3;
 								break;
 							case 1:
 								$session->set('message_1', 'Calibrate Stage 2 of 3 - Image Parameters - Scroll Step, Height');
-								break;
-							case 2:
-								$session->set('message_1', 'Calibrate Stage 3 of 3 - Data Entry Parameters - Fields');
-								$session->current_transcription_def_fields =	
-									$transcription_detail_def_model
-									->where('project_index', $session->current_project[0]['project_index'])
-									->where('transcription_index', $session->current_transcription[0]['BMD_header_index'])
-									//->where('scan_format', $session->current_allocation[0]['scan_format'])
-									->orderby('field_order','ASC')
-									->findAll();
 								break;
 						}
 				case 1:
@@ -2393,11 +2396,6 @@ class Transcribe extends BaseController
 		echo view('templates/header');
 		echo view('linBMD2/calibrate_step1');
 		echo view('linBMD2/transcribe_panzoom');
-		if ( $session->calibrate > 0)
-			{
-				echo view('linBMD2/transcribe_dragable');
-				echo view('linBMD2/transcribe_ruler');
-			}
 		echo view('templates/footer');	
 	}
 	
@@ -2450,24 +2448,9 @@ class Transcribe extends BaseController
 								'BMD_image_y' => $session->image_y,
 								'BMD_image_scroll_step' => $session->panzoom_s,
 							];
-					$transcription_model->update($session->current_transcription[0]['BMD_header_index'], $data);	 
-					break;
-				case 2:
-					// get inputs
-					foreach ($session->current_transcription_def_fields as $td) 
-						{
-							// get the value
-							$width = $this->request->getPost($td['html_name']);
-						
-							// if 
-							//update file
-							$data =	[
-										'column_width' => $width,
-									];
-							$transcription_detail_def_model->update($td['field_index'], $data);
-						}
-						
-					$session->stop_calibrate = 'stop';
+					$transcription_model->update($session->current_transcription[0]['BMD_header_index'], $data);
+					
+					$session->stop_calibrate = 'stop';	 
 					break;
 			}
 			
@@ -2497,45 +2480,8 @@ class Transcribe extends BaseController
 				$session->set('message_2', 'Image parameters have been re-calibrated.');
 				$session->set('message_class_2', 'alert alert-success');
 				
-				// where was calibrate called from?
-				if ( $session->verifytranscribe_calibrate == 'N' )
-					{
-						// from the menu
-						return redirect()->to( base_url('transcribe/transcribe_step1/2') );
-					}
-				else
-					{
-						// from Verify or Transcribe
-						switch ($session->last_cycle_code) 
-							{
-								// called from Verify
-								case 'VERIT':
-									$session->verifytranscribe_calibrate = 'N';
-									$session->BMD_cycle_code = $session->last_cycle_code;
-									return redirect()->to(base_url('transcribe/verify_step1/'.$BMD_header_index));
-									break;
-								// called from transcribe
-								case 'INPRO':
-									$session->verifytranscribe_calibrate = 'N';
-									$session->BMD_cycle_code = 'INPRO';
-									switch ($session->current_allocation[0]['BMD_type']) 
-										{
-											case 'B': // = Births in FreeBMD
-												return redirect()->to( base_url('births/transcribe_births_step1/0') );
-												break;
-											case 'M': // = Marriages in FreeBMD
-												return redirect()->to( base_url('marriages/transcribe_marriages_step1/0') );
-												break;
-											case 'D': // = Deaths in FreeBMD
-												return redirect()->to( base_url('deaths/transcribe_deaths_step1/0') );
-												break;
-												// cases for types in other projects, FreeREG, FreeCEN
-											default:
-												break;
-										}
-									break;									
-							}
-					}	
+				// return
+				return redirect()->to( base_url('transcribe/transcribe_step1/2') );
 			}
 		else
 			{
@@ -3333,8 +3279,20 @@ class Transcribe extends BaseController
 		// initialise method
 		$session = session();
 		$def_fields_model = new Def_Fields_Model();
-		$def_image_model = new Def_Image_Model();	
-
+		$def_image_model = new Def_Image_Model();
+		
+		// need to set some variables which are used in transcribe_panzoom
+		$current_transcription = array();
+		$current_transcription[0]['BMD_image_scroll_step'] = 0;
+		$current_transcription[0]['header_x'] = 0;
+		$current_transcription[0]['header_y'] = 0;
+		$current_transcription[0]['BMD_panzoom_x'] = 0;
+		$current_transcription[0]['BMD_panzoom_y'] = 0;
+		$session->current_transcription = $current_transcription;
+		$session->lastEl = array();
+		$session->current_transcription_def_fields = $session->default_field_parms;
+		$session->def_update_flag = 1;
+		
 		// initialise messages
 		switch ($start_message) 
 			{
@@ -3372,7 +3330,7 @@ class Transcribe extends BaseController
 								// set image height for display and in order to allow scroll step calculation
 								$session->image_y = 350;
 								// set number of lines to display on transcribe and verify screens and number of lines to use in scroll step calculation
-								$session->panzoom_l = 10;
+								$session->panzoom_l = 0;
 								$session->height_l = 3;
 								break;
 							case 2:
@@ -3389,18 +3347,9 @@ class Transcribe extends BaseController
 			}									
 		
 		// show views																
-		echo view('templates/header');
+		echo view('templates/header'); 
 		echo view('linBMD2/calibrate_coords_step1');
 		echo view('linBMD2/transcribe_panzoom');
-		if ( $session->calibrate == 1)
-			{
-				echo view('linBMD2/transcribe_ruler');
-			}
-		if ( $session->calibrate == 2)
-			{
-				echo view('linBMD2/transcribe_dragable');
-				echo view('linBMD2/transcribe_ruler');
-			}
 		echo view('templates/footer');	
 	}
 	
@@ -3420,8 +3369,11 @@ class Transcribe extends BaseController
 					$session->set('panzoom_x', $this->request->getPost('panzoom_x'));
 					$session->set('panzoom_y', $this->request->getPost('panzoom_y'));
 					$session->set('panzoom_z', $this->request->getPost('panzoom_z'));
-					$session->set('zoom_lock', $this->request->getPost('zoom_lock'));				
-					
+					$session->set('zoom_lock', $this->request->getPost('zoom_lock'));
+					$session->set('zoom_lock', $this->request->getPost('zoom_lock'));
+					$session->set('client_x', json_decode($this->request->getPost('client_x')));	
+					$session->set('client_y', json_decode($this->request->getPost('client_y')));			
+			
 					// update default image set
 					$def_image_model
 						->where('project_index', $session->current_project[0]['project_index'])
@@ -3435,11 +3387,14 @@ class Transcribe extends BaseController
 						->set(['zoom_lock' => $session->zoom_lock])
 						->set(['reference_scan' => $session->reference_scan])
 						->set(['reference_path' => $session->reference_path])
+						->set(['calib_x' => $session->client_x])
+						->set(['calib_y' => $session->client_y])
 						->update();
 					break;
 				case 1:
 					// get inputs
 					$session->set('panzoom_s', $this->request->getPost('panzoom_s'));
+					$session->set('image_y', $this->request->getPost('image_y'));
 					$session->set('image_y', $this->request->getPost('image_y'));
 					
 					// check that the height was calculated
@@ -3460,21 +3415,19 @@ class Transcribe extends BaseController
 						->update();
 					break;
 				case 2:
-					// get inputs		
-					foreach ($session->default_field_parms as $td) 
+					// get defFields input
+					$session->set('defFields', json_decode($_POST['defFields']));
+		
+					// update detail defs with column_width in case user used resize
+					if ( $session->defFields )
 						{
-							// get the value
-							$width = $this->request->getPost($td['html_name']);
-						
-							//update file
-							$def_fields_model
-								->where('project_index', $session->current_project[0]['project_index'])
-								->where('syndicate_index', $session->reference_synd)
-								->where('data_entry_format', $session->reference_data_entry_format)
-								->where('scan_format', $session->reference_scan_format)
-								->where('html_name', $td['html_name'])
-								->set(['column_width' => $width])
-								->update();
+							// update def fields
+							foreach ( $session->defFields as $defField )
+								{
+									$def_fields_model
+										->set(['column_width' => $defField->column_width])
+										->update($defField->field_index);
+								}		
 						}
 						
 					// stop calibration

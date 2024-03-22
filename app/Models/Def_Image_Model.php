@@ -22,6 +22,8 @@ class Def_Image_Model extends Model
 									'zoom_lock',
 									'reference_scan',
 									'reference_path',
+									'calib_x',
+									'calib_y',
 								];
     protected $returnType = 'array';
 }

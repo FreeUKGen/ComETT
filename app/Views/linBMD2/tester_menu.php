@@ -6,7 +6,7 @@
 	
 	<div class="row">
 		<label for="issues" class="col-8 pl-0">Issue Tracker</label>
-		<a id="issues" class="btn btn-outline-primary btn-sm col-4 d-flex target="_blank" href="https://docs.google.com/spreadsheets/d/1quaP9rhInmqlLeRzSZGDxi-Xlbto_U80ucV1f7J0Nek/edit?usp=sharing">
+		<a id="issues" class="btn btn-outline-primary btn-sm col-4 d-flex flex-column align-items-center" target="_blank" href="https://docs.google.com/spreadsheets/d/1quaP9rhInmqlLeRzSZGDxi-Xlbto_U80ucV1f7J0Nek/edit?usp=sharing">
 			<span>Issue Tracker</span>
 		</a>
 	</div>

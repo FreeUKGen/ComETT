@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
 
 		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS, then Simple Keyboard -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>
@@ -102,7 +102,7 @@
 		<style>
 			.panzoom-wrapper 
 			{
-				height: <?php echo $session->image_y * $session->actual_y / 1080; ?>px;
+				height: <?php echo $session->image_y; ?>px;
 				border: 3px solid blue;
 				overflow: hidden;
 				user-select: none;
@@ -182,7 +182,24 @@
 					font-size: 0.8vw;
 				}
 		</style>
-					
+		
+		<!-- this is for the resize of the transcribe input -->
+		<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+		<style>
+			.resizable 
+				{
+					margin-right: 5px;
+					overflow: hidden;
+					touch-action: none;
+					box-sizing: border-box;
+				}
+				
+			.draggable 
+				{
+					  touch-action: none;
+					  user-select: none;
+				}
+		</style>
 		
 		<title><?= esc($session->title); ?></title>
 		
