@@ -13,7 +13,7 @@ jobs:
       with:
         owner: FreeUKGen
         number: 1
-        #token: ${{ secrets.PROJECT_PAT }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         iteration-field: Iteration
         iteration: last
         new-iteration: current
