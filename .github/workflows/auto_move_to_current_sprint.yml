@@ -172,12 +172,12 @@ jobs:
               #   }
               # });
 
-              # if (sourceIssues.length === 0) {
-              #   console.log(`No issues found in source iteration "${sourceIteration.title}"`);
-              #   return;
-              # }
+              if (sourceIssues.length === 0) {
+                 console.log(`No issues found in source iteration "${sourceIteration.title}"`);
+                 return;
+               }
 
-              # console.log(`Found ${sourceIssues.length} issues in source iteration`);
+               console.log(`Found ${sourceIssues.length} issues in source iteration`);
 
               // Move each issue to target iteration
               for (const issue of sourceIssues) {
