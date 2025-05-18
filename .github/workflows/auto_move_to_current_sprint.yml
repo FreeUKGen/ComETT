@@ -1,17 +1,20 @@
-name: List All Open Issues
+name: Move Issues Between Iterations
 
 on:
   workflow_dispatch:
     inputs:
+      source_iteration:
+        description: 'Source iteration title (e.g., "Sprint 1")'
+        required: true
       target_iteration:
-        description: 'Target iteration title'
+        description: 'Target iteration title (e.g., "Sprint 2")'
         required: true
 
 jobs:
-  list-open-issues:
+  move-iteration-issues:
     runs-on: ubuntu-latest
     steps:
-      - name: List and move open issues
+      - name: Move issues between iterations
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.PROJECT_PAT }}
@@ -55,17 +58,25 @@ jobs:
               const iterations = iterationField.configuration.iterations;
               console.log('Available iterations:');
               iterations.forEach(iter => {
-                console.log(`- ${iter.title}`);
+                console.log(`- ${iter.title} ${iter.id}`);
               });
               
-              // Find target iteration
+              // Find source and target iterations
+              const sourceIteration = iterations.find(
+                iter => iter.title === '${{ github.event.inputs.source_iteration }}'
+              );
               const targetIteration = iterations.find(
                 iter => iter.title === '${{ github.event.inputs.target_iteration }}'
               );
 
+              if (!sourceIteration) {
+                throw new Error(`Source iteration "${{ github.event.inputs.source_iteration }}" not found. Available iterations are listed above.`);
+              }
               if (!targetIteration) {
                 throw new Error(`Target iteration "${{ github.event.inputs.target_iteration }}" not found. Available iterations are listed above.`);
               }
+
+              console.log(`Moving issues from "${sourceIteration.title}" to "${targetIteration.title}"`);
 
               // Get all items in the project
               const projectItems = await github.graphql(`
@@ -92,10 +103,6 @@ jobs:
                               id
                               number
                               title
-                              state
-                              repository {
-                                name
-                              }
                             }
                           }
                         }
@@ -104,81 +111,50 @@ jobs:
                   }
                 }
               `);
-
-              // Find all open issues and group them by iteration
-              const openIssuesByIteration = {};
-              iterations.forEach(iter => {
-                openIssuesByIteration[iter.title] = [];
+              // Find open issues in source iteration
+              const sourceIssues = projectItems.node.items.nodes.filter(item => {
+                if (!item.content) return false;
+                return item.content.state === 'OPEN' && 
+                       item.fieldValues.nodes.some(fieldValue => 
+                         fieldValue.iterationId === sourceIteration.id
+                       );
               });
 
-              projectItems.node.items.nodes.forEach(item => {
-                if (!item.content || item.content.state !== 'OPEN') return;
-                
-                const iterationValue = item.fieldValues.nodes.find(fieldValue => 
-                  fieldValue.field.id === iterationField.id
-                );
-                
-                const iterationTitle = iterationValue ? 
-                  iterations.find(iter => iter.id === iterationValue.iterationId)?.title : 
-                  'No Iteration';
-                
-                if (!openIssuesByIteration[iterationTitle]) {
-                  openIssuesByIteration[iterationTitle] = [];
-                }
-                
-                openIssuesByIteration[iterationTitle].push({
-                  number: item.content.number,
-                  title: item.content.title,
-                  repository: item.content.repository.name,
-                  id: item.id
-                });
-              });
+              if (sourceIssues.length === 0) {
+                console.log(`No issues found in source iteration "${sourceIteration.title}"`);
+                return;
+              }
 
-              // Print summary of open issues by iteration
-              console.log('\nOpen Issues Summary:');
-              Object.entries(openIssuesByIteration).forEach(([iteration, issues]) => {
-                console.log(`\n${iteration} (${issues.length} issues):`);
-                issues.forEach(issue => {
-                  console.log(`- #${issue.number} (${issue.repository}): ${issue.title}`);
-                });
-              });
+              console.log(`Found ${sourceIssues.length} issues in source iteration`);
 
-              // Ask for confirmation before moving issues
-              const totalOpenIssues = Object.values(openIssuesByIteration).reduce((sum, issues) => sum + issues.length, 0);
-              console.log(`\nTotal open issues found: ${totalOpenIssues}`);
-
-              // Move all open issues to target iteration
-              for (const [iteration, issues] of Object.entries(openIssuesByIteration)) {
-                if (iteration === targetIteration.title) continue; // Skip issues already in target iteration
-                
-                for (const issue of issues) {
-                  try {
-                    await github.graphql(`
-                      mutation {
-                        updateProjectV2ItemFieldValue(input: {
-                          projectId: "${projectId}"
-                          itemId: "${issue.id}"
-                          fieldId: "${iterationField.id}"
-                          value: { 
-                            iterationId: "${targetIteration.id}"
-                          }
-                        }) {
-                          projectV2Item {
-                            id
-                          }
+              // Move each issue to target iteration
+              for (const issue of sourceIssues) {
+                try {
+                  await github.graphql(`
+                    mutation {
+                      updateProjectV2ItemFieldValue(input: {
+                        projectId: "${projectId}"
+                        itemId: "${issue.id}"
+                        fieldId: "${iterationField.id}"
+                        value: { 
+                          iterationId: "${targetIteration.id}"
+                        }
+                      }) {
+                        projectV2Item {
+                          id
                         }
                       }
-                    `);
+                    }
+                  `);
 
-                    console.log(`Moved issue #${issue.number} (${issue.repository}): ${issue.title} from ${iteration} to ${targetIteration.title}`);
-                  } catch (moveError) {
-                    console.error(`Failed to move issue #${issue.number}: ${moveError.message}`);
-                    // Continue with next issue even if one fails
-                  }
+                  console.log(`Moved open issue #${issue.content.number} (${issue.content.title}) to ${targetIteration.title}`);
+                } catch (moveError) {
+                  console.error(`Failed to move issue #${issue.content.number}: ${moveError.message}`);
+                  // Continue with next issue even if one fails
                 }
               }
 
-              console.log(`Successfully moved all open issues to ${targetIteration.title}`);
+              console.log(`Successfully moved ${sourceIssues.length} issues from "${sourceIteration.title}" to "${targetIteration.title}"`);
             } catch (error) {
               console.error('Error:', error.message);
               if (error.message.includes('Bad credentials')) {
