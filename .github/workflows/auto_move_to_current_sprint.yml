@@ -144,40 +144,40 @@ jobs:
               console.log(`${sourceIteration.id}`);
 
               // Log all issues and their iterations
-              console.log('\n=== All Project Issues ===');
-              projectItems.node.items.nodes.forEach(item => {
-                if (!item.content) return;
+              # console.log('\n=== All Project Issues ===');
+              # projectItems.node.items.nodes.forEach(item => {
+              #   if (!item.content) return;
                 
-                const iterationValue = item.fieldValues.nodes.find(fieldValue => 
-                  fieldValue && 
-                  fieldValue.field && 
-                  fieldValue.field.id === iterationField.id
-                );
+              #   const iterationValue = item.fieldValues.nodes.find(fieldValue => 
+              #     fieldValue && 
+              #     fieldValue.field && 
+              #     fieldValue.field.id === iterationField.id
+              #   );
                 
-                const iterationTitle = iterationValue && iterationValue.iterationId ? 
-                  iterations.find(iter => iter.id === iterationValue.iterationId)?.title : 
-                  'No Iteration';
+              #   const iterationTitle = iterationValue && iterationValue.iterationId ? 
+              #     iterations.find(iter => iter.id === iterationValue.iterationId)?.title : 
+              #     'No Iteration';
                 
-                console.log(`\nIssue #${item.content.number}: ${item.content.title}`);
-                console.log(`  Repository: ${item.content.repository.name}`);
-                console.log(`  State: ${item.content.state}`);
-                console.log(`  Iteration: ${iterationTitle}`);
+              #   console.log(`\nIssue #${item.content.number}: ${item.content.title}`);
+              #   console.log(`  Repository: ${item.content.repository.name}`);
+              #   console.log(`  State: ${item.content.state}`);
+              #   console.log(`  Iteration: ${iterationTitle}`);
                 
-                if (item.content.labels && item.content.labels.nodes.length > 0) {
-                  console.log(`  Labels: ${item.content.labels.nodes.map(label => label.name).join(', ')}`);
-                }
+              #   if (item.content.labels && item.content.labels.nodes.length > 0) {
+              #     console.log(`  Labels: ${item.content.labels.nodes.map(label => label.name).join(', ')}`);
+              #   }
                 
-                if (item.content.assignees && item.content.assignees.nodes.length > 0) {
-                  console.log(`  Assignees: ${item.content.assignees.nodes.map(assignee => assignee.login).join(', ')}`);
-                }
-              });
+              #   if (item.content.assignees && item.content.assignees.nodes.length > 0) {
+              #     console.log(`  Assignees: ${item.content.assignees.nodes.map(assignee => assignee.login).join(', ')}`);
+              #   }
+              # });
 
-              if (sourceIssues.length === 0) {
-                console.log(`No issues found in source iteration "${sourceIteration.title}"`);
-                return;
-              }
+              # if (sourceIssues.length === 0) {
+              #   console.log(`No issues found in source iteration "${sourceIteration.title}"`);
+              #   return;
+              # }
 
-              console.log(`Found ${sourceIssues.length} issues in source iteration`);
+              # console.log(`Found ${sourceIssues.length} issues in source iteration`);
 
               // Move each issue to target iteration
               for (const issue of sourceIssues) {
