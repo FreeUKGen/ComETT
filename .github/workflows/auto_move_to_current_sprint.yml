@@ -181,19 +181,19 @@ jobs:
             #   }
 
             #   console.log(`Successfully moved ${sourceIssues.length} issues from "${sourceIteration.title}" to "${targetIteration.title}"`);
-            # } catch (error) {
-            #   console.error('Error:', error.message);
-            #   if (error.message.includes('Bad credentials')) {
-            #     console.error('This usually means:');
-            #     console.error('1. The PROJECT_PAT secret is not set in repository secrets');
-            #     console.error('2. The token does not have sufficient permissions (needs repo and project scopes)');
-            #     console.error('3. The token has expired');
-            #     console.error('Please check your repository secrets and token permissions.');
-            #   } else if (error.message.includes('Could not resolve to a node')) {
-            #     console.error('This usually means:');
-            #     console.error('1. The project ID is incorrect');
-            #     console.error('2. The project does not exist');
-            #     console.error('3. The token does not have access to the project');
-            #   }
-            #   throw error;
-            # }
+            } catch (error) {
+              console.error('Error:', error.message);
+              if (error.message.includes('Bad credentials')) {
+                console.error('This usually means:');
+                console.error('1. The PROJECT_PAT secret is not set in repository secrets');
+                console.error('2. The token does not have sufficient permissions (needs repo and project scopes)');
+                console.error('3. The token has expired');
+                console.error('Please check your repository secrets and token permissions.');
+              } else if (error.message.includes('Could not resolve to a node')) {
+                console.error('This usually means:');
+                console.error('1. The project ID is incorrect');
+                console.error('2. The project does not exist');
+                console.error('3. The token does not have access to the project');
+              }
+              throw error;
+            }
