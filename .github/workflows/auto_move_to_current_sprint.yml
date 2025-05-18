@@ -51,29 +51,24 @@ jobs:
               if (!iterationField) {
                 throw new Error('Iteration field not found in project');
               }
-  
-              // Get current date
-              const now = new Date();
               
-              // Find current and last iterations
-              const iterations = iterationField.configuration.iterations;
-              const currentIteration = iterations.find(iter => {
-                const startDate = new Date(iter.startDate);
-                const endDate = new Date(startDate.getTime() + iter.duration * 24 * 60 * 60 * 1000);
-                return now >= startDate && now <= endDate;
-              });
-  
-              const lastIteration = iterations.find(iter => {
-                const startDate = new Date(iter.startDate);
-                const endDate = new Date(startDate.getTime() + iter.duration * 24 * 60 * 60 * 1000);
-                return endDate < now && endDate > new Date(now.getTime() - 14 * 24 * 60 * 60 * 1000); // Within last 2 weeks
-              });
-  
-              if (!currentIteration || !lastIteration) {
-                console.log('No current or last iteration found');
-                return;
+              // Find source and target iterations
+              const sourceIteration = iterationField.configuration.iterations.find(
+                iter => iter.title === '${{ github.event.inputs.source_iteration }}'
+              );
+              const targetIteration = iterationField.configuration.iterations.find(
+                iter => iter.title === '${{ github.event.inputs.target_iteration }}'
+              );
+
+              if (!sourceIteration) {
+                throw new Error(`Source iteration "${{ github.event.inputs.source_iteration }}" not found`);
               }
-  
+              if (!targetIteration) {
+                throw new Error(`Target iteration "${{ github.event.inputs.target_iteration }}" not found`);
+              }
+
+              console.log(`Moving issues from "${sourceIteration.title}" to "${targetIteration.title}"`);
+
               // Get all items in the project
               const projectItems = await github.graphql(`
                 query {
@@ -107,17 +102,19 @@ jobs:
                   }
                 }
               `);
-  
-              // Find issues in last iteration
-              const lastSprintIssues = projectItems.node.items.nodes.filter(item => {
+
+              // Find issues in source iteration
+              const sourceIssues = projectItems.node.items.nodes.filter(item => {
                 if (!item.content) return false;
                 return item.fieldValues.nodes.some(fieldValue => 
-                  fieldValue.iterationId === lastIteration.id
+                  fieldValue.iterationId === sourceIteration.id
                 );
               });
-  
-              // Move each issue to current iteration
-              for (const issue of lastSprintIssues) {
+
+              console.log(`Found ${sourceIssues.length} issues in source iteration`);
+
+              // Move each issue to target iteration
+              for (const issue of sourceIssues) {
                 await github.graphql(`
                   mutation {
                     updateProjectV2ItemFieldValue(input: {
@@ -125,7 +122,7 @@ jobs:
                       itemId: "${issue.id}"
                       fieldId: "${iterationField.id}"
                       value: { 
-                        iterationId: "${currentIteration.id}"
+                        iterationId: "${targetIteration.id}"
                       }
                     }) {
                       projectV2Item {
@@ -134,8 +131,19 @@ jobs:
                     }
                   }
                 `);
-  
-                console.log(`Moved issue #${issue.content.number} to current sprint (${currentIteration.title})`);
+
+                console.log(`Moved issue #${issue.content.number} (${issue.content.title}) to ${targetIteration.title}`);
               }
-  
-              console.log(`Moved ${lastSprintIssues.length} issues to current sprint (${currentIteration.title})`);
+
+              console.log(`Successfully moved ${sourceIssues.length} issues from "${sourceIteration.title}" to "${targetIteration.title}"`);
+              } catch (error) {
+              console.error('Error:', error.message);
+              if (error.message.includes('Bad credentials')) {
+                console.error('This usually means:');
+                console.error('1. The PROJECT_TOKEN secret is not set in repository secrets');
+                console.error('2. The token does not have sufficient permissions (needs repo and project scopes)');
+                console.error('3. The token has expired');
+                console.error('Please check your repository secrets and token permissions.');
+              }
+              throw error;
+              }
