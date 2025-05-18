@@ -1,20 +1,138 @@
+name: Move Last Sprint Issues to Current Sprint
+
 on:
   schedule:
-    # Runs "at 05:00, only on Monday" (see https://crontab.guru)
-    - cron: '0 5 * * 1'
+    # Run at the start of each sprint (assuming 2-week sprints)
+    - cron: '0 0 * * 1'  # Every Monday at midnight UTC
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
-  move-to-next-iteration:
-    name: Move to next iteration
+  move-sprint-issues:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: blombard/move-to-next-iteration@master
-      with:
-        owner: FreeUKGen
-        number: 1
-        token: ${{ secrets.GITHUB_TOKEN }}
-        iteration-field: Iteration
-        iteration: last
-        new-iteration: current
-        excluded-statuses: "Closed"
+      - name: Move issues to current sprint
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const projectId = 12
+            
+            // Get project fields to find iteration field ID
+            const projectFields = await github.graphql(`
+              query {
+                node(id: "${projectId}") {
+                  ... on ProjectV2 {
+                    fields(first: 20) {
+                      nodes {
+                        ... on ProjectV2IterationField {
+                          id
+                          name
+                          configuration {
+                            iterations {
+                              id
+                              title
+                              startDate
+                              duration
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `);
+
+            // Find the iteration field
+            const iterationField = projectFields.node.fields.nodes.find(field => field.name === 'Sprint');
+            if (!iterationField) {
+              throw new Error('Iteration field not found in project');
+            }
+
+            // Get current date
+            const now = new Date();
+            
+            // Find current and last iterations
+            const iterations = iterationField.configuration.iterations;
+            const currentIteration = iterations.find(iter => {
+              const startDate = new Date(iter.startDate);
+              const endDate = new Date(startDate.getTime() + iter.duration * 24 * 60 * 60 * 1000);
+              return now >= startDate && now <= endDate;
+            });
+
+            const lastIteration = iterations.find(iter => {
+              const startDate = new Date(iter.startDate);
+              const endDate = new Date(startDate.getTime() + iter.duration * 24 * 60 * 60 * 1000);
+              return endDate < now && endDate > new Date(now.getTime() - 14 * 24 * 60 * 60 * 1000); // Within last 2 weeks
+            });
+
+            if (!currentIteration || !lastIteration) {
+              console.log('No current or last iteration found');
+              return;
+            }
+
+            // Get all items in the project
+            const projectItems = await github.graphql(`
+              query {
+                node(id: "${projectId}") {
+                  ... on ProjectV2 {
+                    items(first: 100) {
+                      nodes {
+                        id
+                        fieldValues(first: 20) {
+                          nodes {
+                            ... on ProjectV2ItemFieldIterationValue {
+                              iterationId
+                              field {
+                                ... on ProjectV2IterationField {
+                                  id
+                                }
+                              }
+                            }
+                          }
+                        }
+                        content {
+                          ... on Issue {
+                            id
+                            number
+                            title
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `);
+
+            // Find issues in last iteration
+            const lastSprintIssues = projectItems.node.items.nodes.filter(item => {
+              if (!item.content) return false;
+              return item.fieldValues.nodes.some(fieldValue => 
+                fieldValue.iterationId === lastIteration.id
+              );
+            });
+
+            // Move each issue to current iteration
+            for (const issue of lastSprintIssues) {
+              await github.graphql(`
+                mutation {
+                  updateProjectV2ItemFieldValue(input: {
+                    projectId: "${projectId}"
+                    itemId: "${issue.id}"
+                    fieldId: "${iterationField.id}"
+                    value: { 
+                      iterationId: "${currentIteration.id}"
+                    }
+                  }) {
+                    projectV2Item {
+                      id
+                    }
+                  }
+                }
+              `);
+
+              console.log(`Moved issue #${issue.content.number} to current sprint (${currentIteration.title})`);
+            }
+
+            console.log(`Moved ${lastSprintIssues.length} issues to current sprint (${currentIteration.title})`);
