@@ -1,23 +1,28 @@
-name: Move Last Sprint Issues to Current Sprint
+name: Move Issues Between Iterations
 
 on:
-  schedule:
-    # Run at the start of each sprint (assuming 2-week sprints)
-    - cron: '0 0 * * 1'  # Every Monday at midnight UTC
-  workflow_dispatch:  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      source_iteration:
+        description: 'Source iteration title (e.g., "Sprint 1")'
+        required: true
+      target_iteration:
+        description: 'Target iteration title (e.g., "Sprint 2")'
+        required: true
 
 jobs:
-  move-sprint-issues:
+  move-iteration-issues:
     runs-on: ubuntu-latest
     steps:
-      - name: Move issues to current sprint
+      - name: Move issues between iterations
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.PROJECT_PAT }}
           script: |
-             const projectId = 'PVT_kwDOABiKgc4AxB-J'
+            try {
+              const projectId = 'PVT_kwDOABiKgc4AxB-J'
 
-             // Get project fields to find iteration field ID
+              // Get project fields to find iteration field ID
               const projectFields = await github.graphql(`
                 query {
                   node(id: "${projectId}") {
@@ -42,29 +47,33 @@ jobs:
                   }
                 }
               `);
-            
-           
 
-  
               // Find the iteration field
               const iterationField = projectFields.node.fields.nodes.find(field => field.name === 'Sprint');
               if (!iterationField) {
-                throw new Error('Iteration field not found in project');
+                throw new Error('Sprint field not found in project. Please ensure there is a field named "Sprint" in your project.');
               }
+
+              // Get all available iterations
+              const iterations = iterationField.configuration.iterations;
+              console.log('Available iterations:');
+              iterations.forEach(iter => {
+                console.log(`- ${iter.title}`);
+              });
               
               // Find source and target iterations
-              const sourceIteration = iterationField.configuration.iterations.find(
+              const sourceIteration = iterations.find(
                 iter => iter.title === '${{ github.event.inputs.source_iteration }}'
               );
-              const targetIteration = iterationField.configuration.iterations.find(
+              const targetIteration = iterations.find(
                 iter => iter.title === '${{ github.event.inputs.target_iteration }}'
               );
 
               if (!sourceIteration) {
-                throw new Error(`Source iteration "${{ github.event.inputs.source_iteration }}" not found`);
+                throw new Error(`Source iteration "${{ github.event.inputs.source_iteration }}" not found. Available iterations are listed above.`);
               }
               if (!targetIteration) {
-                throw new Error(`Target iteration "${{ github.event.inputs.target_iteration }}" not found`);
+                throw new Error(`Target iteration "${{ github.event.inputs.target_iteration }}" not found. Available iterations are listed above.`);
               }
 
               console.log(`Moving issues from "${sourceIteration.title}" to "${targetIteration.title}"`);
@@ -111,39 +120,54 @@ jobs:
                 );
               });
 
+              if (sourceIssues.length === 0) {
+                console.log(`No issues found in source iteration "${sourceIteration.title}"`);
+                return;
+              }
+
               console.log(`Found ${sourceIssues.length} issues in source iteration`);
 
               // Move each issue to target iteration
               for (const issue of sourceIssues) {
-                await github.graphql(`
-                  mutation {
-                    updateProjectV2ItemFieldValue(input: {
-                      projectId: "${projectId}"
-                      itemId: "${issue.id}"
-                      fieldId: "${iterationField.id}"
-                      value: { 
-                        iterationId: "${targetIteration.id}"
-                      }
-                    }) {
-                      projectV2Item {
-                        id
+                try {
+                  await github.graphql(`
+                    mutation {
+                      updateProjectV2ItemFieldValue(input: {
+                        projectId: "${projectId}"
+                        itemId: "${issue.id}"
+                        fieldId: "${iterationField.id}"
+                        value: { 
+                          iterationId: "${targetIteration.id}"
+                        }
+                      }) {
+                        projectV2Item {
+                          id
+                        }
                       }
                     }
-                  }
-                `);
+                  `);
 
-                console.log(`Moved issue #${issue.content.number} (${issue.content.title}) to ${targetIteration.title}`);
+                  console.log(`Moved issue #${issue.content.number} (${issue.content.title}) to ${targetIteration.title}`);
+                } catch (moveError) {
+                  console.error(`Failed to move issue #${issue.content.number}: ${moveError.message}`);
+                  // Continue with next issue even if one fails
+                }
               }
 
               console.log(`Successfully moved ${sourceIssues.length} issues from "${sourceIteration.title}" to "${targetIteration.title}"`);
-              } catch (error) {
+            } catch (error) {
               console.error('Error:', error.message);
               if (error.message.includes('Bad credentials')) {
                 console.error('This usually means:');
-                console.error('1. The PROJECT_TOKEN secret is not set in repository secrets');
+                console.error('1. The PROJECT_PAT secret is not set in repository secrets');
                 console.error('2. The token does not have sufficient permissions (needs repo and project scopes)');
                 console.error('3. The token has expired');
                 console.error('Please check your repository secrets and token permissions.');
+              } else if (error.message.includes('Could not resolve to a node')) {
+                console.error('This usually means:');
+                console.error('1. The project ID is incorrect');
+                console.error('2. The project does not exist');
+                console.error('3. The token does not have access to the project');
               }
               throw error;
-              }
+            }
