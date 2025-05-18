@@ -120,54 +120,80 @@ jobs:
                        );
               });
 
-              if (sourceIssues.length === 0) {
-                console.log(`No issues found in source iteration "${sourceIteration.title}"`);
-                return;
-              }
-
-              console.log(`Found ${sourceIssues.length} issues in source iteration`);
-
-              // Move each issue to target iteration
-              for (const issue of sourceIssues) {
-                try {
-                  await github.graphql(`
-                    mutation {
-                      updateProjectV2ItemFieldValue(input: {
-                        projectId: "${projectId}"
-                        itemId: "${issue.id}"
-                        fieldId: "${iterationField.id}"
-                        value: { 
-                          iterationId: "${targetIteration.id}"
-                        }
-                      }) {
-                        projectV2Item {
-                          id
-                        }
-                      }
-                    }
-                  `);
-
-                  console.log(`Moved open issue #${issue.content.number} (${issue.content.title}) to ${targetIteration.title}`);
-                } catch (moveError) {
-                  console.error(`Failed to move issue #${issue.content.number}: ${moveError.message}`);
-                  // Continue with next issue even if one fails
+              // Log all issues and their iterations
+              console.log('\n=== All Project Issues ===');
+              projectItems.node.items.nodes.forEach(item => {
+                if (!item.content) return;
+                
+                const iterationValue = item.fieldValues.nodes.find(fieldValue => 
+                  fieldValue.field.id === iterationField.id
+                );
+                
+                const iterationTitle = iterationValue ? 
+                  iterations.find(iter => iter.id === iterationValue.iterationId)?.title : 
+                  'No Iteration';
+                
+                console.log(`\nIssue #${item.content.number}: ${item.content.title}`);
+                console.log(`  Repository: ${item.content.repository.name}`);
+                console.log(`  State: ${item.content.state}`);
+                console.log(`  Iteration: ${iterationTitle}`);
+                if (item.content.labels.nodes.length > 0) {
+                  console.log(`  Labels: ${item.content.labels.nodes.map(label => label.name).join(', ')}`);
                 }
-              }
+                if (item.content.assignees.nodes.length > 0) {
+                  console.log(`  Assignees: ${item.content.assignees.nodes.map(assignee => assignee.login).join(', ')}`);
+                }
+              });
 
-              console.log(`Successfully moved ${sourceIssues.length} issues from "${sourceIteration.title}" to "${targetIteration.title}"`);
-            } catch (error) {
-              console.error('Error:', error.message);
-              if (error.message.includes('Bad credentials')) {
-                console.error('This usually means:');
-                console.error('1. The PROJECT_PAT secret is not set in repository secrets');
-                console.error('2. The token does not have sufficient permissions (needs repo and project scopes)');
-                console.error('3. The token has expired');
-                console.error('Please check your repository secrets and token permissions.');
-              } else if (error.message.includes('Could not resolve to a node')) {
-                console.error('This usually means:');
-                console.error('1. The project ID is incorrect');
-                console.error('2. The project does not exist');
-                console.error('3. The token does not have access to the project');
-              }
-              throw error;
-            }
+
+            #   if (sourceIssues.length === 0) {
+            #     console.log(`No issues found in source iteration "${sourceIteration.title}"`);
+            #     return;
+            #   }
+
+            #   console.log(`Found ${sourceIssues.length} issues in source iteration`);
+
+            #   // Move each issue to target iteration
+            #   for (const issue of sourceIssues) {
+            #     try {
+            #       await github.graphql(`
+            #         mutation {
+            #           updateProjectV2ItemFieldValue(input: {
+            #             projectId: "${projectId}"
+            #             itemId: "${issue.id}"
+            #             fieldId: "${iterationField.id}"
+            #             value: { 
+            #               iterationId: "${targetIteration.id}"
+            #             }
+            #           }) {
+            #             projectV2Item {
+            #               id
+            #             }
+            #           }
+            #         }
+            #       `);
+
+            #       console.log(`Moved open issue #${issue.content.number} (${issue.content.title}) to ${targetIteration.title}`);
+            #     } catch (moveError) {
+            #       console.error(`Failed to move issue #${issue.content.number}: ${moveError.message}`);
+            #       // Continue with next issue even if one fails
+            #     }
+            #   }
+
+            #   console.log(`Successfully moved ${sourceIssues.length} issues from "${sourceIteration.title}" to "${targetIteration.title}"`);
+            # } catch (error) {
+            #   console.error('Error:', error.message);
+            #   if (error.message.includes('Bad credentials')) {
+            #     console.error('This usually means:');
+            #     console.error('1. The PROJECT_PAT secret is not set in repository secrets');
+            #     console.error('2. The token does not have sufficient permissions (needs repo and project scopes)');
+            #     console.error('3. The token has expired');
+            #     console.error('Please check your repository secrets and token permissions.');
+            #   } else if (error.message.includes('Could not resolve to a node')) {
+            #     console.error('This usually means:');
+            #     console.error('1. The project ID is incorrect');
+            #     console.error('2. The project does not exist');
+            #     console.error('3. The token does not have access to the project');
+            #   }
+            #   throw error;
+            # }
