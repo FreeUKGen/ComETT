@@ -103,6 +103,20 @@ jobs:
                               id
                               number
                               title
+                              state
+                              repository {
+                                name
+                              }
+                              labels(first: 10) {
+                                nodes {
+                                  name
+                                }
+                              }
+                              assignees(first: 5) {
+                                nodes {
+                                  login
+                                }
+                              }
                             }
                           }
                         }
@@ -115,10 +129,16 @@ jobs:
               // Find open issues in source iteration
               const sourceIssues = projectItems.node.items.nodes.filter(item => {
                 if (!item.content) return false;
+                
+                const iterationValue = item.fieldValues.nodes.find(fieldValue => 
+                  fieldValue && 
+                  fieldValue.field && 
+                  fieldValue.field.id === iterationField.id
+                );
+                
                 return item.content.state === 'OPEN' && 
-                       item.fieldValues.nodes.some(fieldValue => 
-                         fieldValue.iterationId === sourceIteration.id
-                       );
+                       iterationValue && 
+                       iterationValue.iterationId === sourceIteration.id;
               });
 
               // Log all issues and their iterations
@@ -127,10 +147,12 @@ jobs:
                 if (!item.content) return;
                 
                 const iterationValue = item.fieldValues.nodes.find(fieldValue => 
+                  fieldValue && 
+                  fieldValue.field && 
                   fieldValue.field.id === iterationField.id
                 );
                 
-                const iterationTitle = iterationValue ? 
+                const iterationTitle = iterationValue && iterationValue.iterationId ? 
                   iterations.find(iter => iter.id === iterationValue.iterationId)?.title : 
                   'No Iteration';
                 
@@ -138,10 +160,12 @@ jobs:
                 console.log(`  Repository: ${item.content.repository.name}`);
                 console.log(`  State: ${item.content.state}`);
                 console.log(`  Iteration: ${iterationTitle}`);
-                if (item.content.labels.nodes.length > 0) {
+                
+                if (item.content.labels && item.content.labels.nodes.length > 0) {
                   console.log(`  Labels: ${item.content.labels.nodes.map(label => label.name).join(', ')}`);
                 }
-                if (item.content.assignees.nodes.length > 0) {
+                
+                if (item.content.assignees && item.content.assignees.nodes.length > 0) {
                   console.log(`  Assignees: ${item.content.assignees.nodes.map(assignee => assignee.login).join(', ')}`);
                 }
               });
