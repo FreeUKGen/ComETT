@@ -111,13 +111,13 @@ jobs:
                   }
                 }
               `);
-
-              // Find issues in source iteration
+              // Find open issues in source iteration
               const sourceIssues = projectItems.node.items.nodes.filter(item => {
                 if (!item.content) return false;
-                return item.fieldValues.nodes.some(fieldValue => 
-                  fieldValue.iterationId === sourceIteration.id
-                );
+                return item.content.state === 'OPEN' && 
+                       item.fieldValues.nodes.some(fieldValue => 
+                         fieldValue.iterationId === sourceIteration.id
+                       );
               });
 
               if (sourceIssues.length === 0) {
@@ -147,7 +147,7 @@ jobs:
                     }
                   `);
 
-                  console.log(`Moved issue #${issue.content.number} (${issue.content.title}) to ${targetIteration.title}`);
+                  console.log(`Moved open issue #${issue.content.number} (${issue.content.title}) to ${targetIteration.title}`);
                 } catch (moveError) {
                   console.error(`Failed to move issue #${issue.content.number}: ${moveError.message}`);
                   // Continue with next issue even if one fails
