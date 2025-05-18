@@ -15,7 +15,7 @@ jobs:
         with:
           github-token: ${{ secrets.PROJECT_PAT }}
           script: |
-             const projectId = PVT_kwDOABiKgc4AxB-J
+             const projectId = 'PVT_kwDOABiKgc4AxB-J'
 
              // Get project fields to find iteration field ID
               const projectFields = await github.graphql(`
