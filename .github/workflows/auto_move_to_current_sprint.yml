@@ -141,7 +141,7 @@ jobs:
                        iterationValue.iterationId === sourceIteration.id;
               });
 
-              console.log(`${sourceIteration,id}`);
+              console.log(`${sourceIteration.id}`);
 
               // Log all issues and their iterations
               console.log('\n=== All Project Issues ===');
