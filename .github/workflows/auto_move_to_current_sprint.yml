@@ -42,6 +42,13 @@ jobs:
                 }
               }
             `);
+            console.log('projects:');
+              projects.organization.projectsV2.nodes.forEach(project => {
+                console.log(`Project: ${project.title}`);
+                console.log(`Number: ${project.number}`);
+                console.log(`ID: ${project.id}`);
+                console.log('---');
+              });
 
             // Find the iteration field
             const iterationField = projectFields.node.fields.nodes.find(field => field.name === 'Sprint');
