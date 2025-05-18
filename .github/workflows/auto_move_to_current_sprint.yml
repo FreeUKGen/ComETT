@@ -15,33 +15,22 @@ jobs:
         with:
           github-token: ${{ secrets.PROJECT_PAT }}
           script: |
-            const projectId = 12
+           // const projectId = 12
             
-            // Get project fields to find iteration field ID
-            const projectFields = await github.graphql(`
-              query {
-                node(id: "${projectId}") {
-                  ... on ProjectV2 {
-                    fields(first: 20) {
+           const projects = await github.graphql(`
+                query {
+                  organization(login: "FreeUKGen") {
+                    projectsV2(first: 20) {
                       nodes {
-                        ... on ProjectV2IterationField {
-                          id
-                          name
-                          configuration {
-                            iterations {
-                              id
-                              title
-                              startDate
-                              duration
-                            }
-                          }
-                        }
+                        id
+                        number
+                        title
                       }
                     }
                   }
                 }
-              }
-            `);
+              `);
+              
             console.log('projects:');
               projects.organization.projectsV2.nodes.forEach(project => {
                 console.log(`Project: ${project.title}`);
