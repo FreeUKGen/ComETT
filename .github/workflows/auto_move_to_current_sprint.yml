@@ -13,7 +13,7 @@ jobs:
       - name: Move issues to current sprint
         uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.PROJECT_PAT }}
+          token: ${{ secrets.PROJECT_PAT }}
           script: |
             const projectId = 12
             
